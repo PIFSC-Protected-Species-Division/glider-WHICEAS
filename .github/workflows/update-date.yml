@@ -1,0 +1,30 @@
+name: Update README date
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'outputs/combined_map_latest.png'
+
+jobs:
+  update-date:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Update date
+        run: |
+          DATE=$(date -u +"%Y-%m-%d")
+          sed -i "s/_Map last updated:.*_/_Map last updated: ${DATE}_/" README.md
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "chore: auto update last updated date"
+          git push
