@@ -8,4 +8,4 @@ Repository for piloting and analysis of the 2026 WHICEAS Glider Survey
 *This is not part of the NMFS PIC Gliders Shared Drive folder because the surevy includes OSU and PIFSC gliders*
 
 ![WHICEAS glider survey map](/outputs/combined_map_latest.png)
-_Map last updated: YYYY-MM-DD_
+_Map last updated: 2026-02-24_
