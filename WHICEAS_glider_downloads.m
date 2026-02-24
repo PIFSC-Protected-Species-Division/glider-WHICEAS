@@ -111,14 +111,15 @@ CONFIG = agate('C:\Users\selene.fregosi\Desktop\sg274_20260128_WHICEAS\agate_con
 CONFIG.map.naLat = 23;
 CONFIG.map.naLon = -154;
 % set scale bar location
-CONFIG.map.scalePos = [0.05 0.31];
-CONFIG.map.scaleMajor = 100;
-CONFIG.map.scaleMinor = 20;
+% CONFIG.map.scalePos = [0.05 0.31];
+% CONFIG.map.scaleMajor = 100;
+% CONFIG.map.scaleMinor = 20;
 
 [baseFig] = createBasemap(CONFIG, 'bathy', 1, 'contourOn', 0, 'figNum', 2026);
 baseFig.Name = 'WHICEAS 2026';
 % baseFig.Position = [20    80    1200    700]; % set position on screen
-baseFig.Position = [-1828 267 1200 700];
+% baseFig.Position = [-1828 267 1200 700]; % Newport office
+baseFig.Position = [2720 5 1200 700]; % Home office
 % simplify axes labels
 plabel('PLabelLocation', 1, 'PLabelRound', 0, 'FontSize', 14);
 mlabel('MLabelLocation', 1, 'MLabelRound', 0, ...
@@ -138,6 +139,9 @@ for g = 1:numel(gliders)
     h(g) = plotm(ppTmp.startLatitude, ppTmp.startLongitude, ...
         'Color', col_sg(g,:),'LineWidth', 3, 'DisplayName', gliders{g});
 end
+
+addScaleBar('Length', 200, 'Major', 100, 'Minor', 20, ...
+    'AnchorLat', 17.3, 'AnchorLon', -155.3)
 
 % add legend
 legend(h, 'Location', 'southwest', 'FontSize', 14)
