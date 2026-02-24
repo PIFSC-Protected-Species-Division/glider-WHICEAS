@@ -1,48 +1,88 @@
-% combined script
-addpath(genpath('C:\Users\selene.fregosi\Documents\MATLAB\agate'));
+% WHICEAS_glider_downloads.m
+%	Main script to download basestation data and make maps for all gliders
+%
+%	Description:
+%		Runs four "downloadScript" functions - one for each Seaglider in
+%		WHICEAS - to get latest basestation files, generate a zoomable
+%		bathy map, and create the piloting parameters table. Creates a
+%		combined travel metrics table with distances covered and remaining
+%		and a combined map showing all four gliders. The travel metrics
+%		table and combined map both get saved to Google Drive and to the
+%		glider-WHICEAS GitHub repository
+%
+%	Authors:
+%		S. Fregosi <selene.fregosi@gmail.com> <https://github.com/sfregosi>
+%
+%	Updated:   2026 February 24
+%
+%	Created with MATLAB ver.: 24.2.0.2740171 (R2024b) Update 1
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% combined script
+
+% add agate/repo to path
+path_agate = 'C:\Users\selene.fregosi\Documents\MATLAB\agate';
+path_repo = 'C:\Users\selene.fregosi\Documents\GitHub\glider-WHICEAS';
+addpath(genpath(path_agate));
+addpath(genpath(path_repo));
 warning off
-
-% addpath('C:\Users\selene.fregosi\Desktop\sg274_20260128_WHICEAS')
-% pp274 = workflow_downloadScript_sg274_20260128_WHICEAS(0);
-%
-% fprintf(1, '\n----------------------------------\n\n');
-%
-% addpath('C:\Users\selene.fregosi\Desktop\sg607_20260128_WHICEAS')
-% pp607 = workflow_downloadScript_sg607_20260128_WHICEAS(1);
-%
-% fprintf(1, '\n----------------------------------\n\n');
-%
-% addpath('C:\Users\selene.fregosi\Desktop\sg639_20260211_WHICEAS')
-% pp639 = workflow_downloadScript_sg639_20260211_WHICEAS(1);
-%
-% fprintf(1, '\n----------------------------------\n\n');
-%
-% addpath('C:\Users\selene.fregosi\Desktop\sg679_20260205_WHICEAS')
-% pp679 = workflow_downloadScript_sg679_20260205_WHICEAS(1);
-
 
 % set glider names
 gliders = {'sg274', 'sg607', 'sg639', 'sg679'};
 
-% add paths
+% set paths to glider mission olders and add to path
 missionPaths = {
     'C:\Users\selene.fregosi\Desktop\sg274_20260128_WHICEAS'
     'C:\Users\selene.fregosi\Desktop\sg607_20260128_WHICEAS'
     'C:\Users\selene.fregosi\Desktop\sg639_20260211_WHICEAS'
     'C:\Users\selene.fregosi\Desktop\sg679_20260205_WHICEAS'
     };
-cellfun(@(p) addpath(genpath(p)), missionPaths)
+% cellfun(@(p) addpath(genpath(p)), missionPaths)
+
+%% Run each glider 
+% this can be a little slow because of SSH and downloads
 
 % create output structure
-pp = struct;
+ppStruct = struct;
 
-% run each glider
 % argument is to preload previous pp (1) or don't preload (0)
-pp.sg274 = workflow_downloadScript_sg274_20260128_WHICEAS(1);
-pp.sg607 = workflow_downloadScript_sg607_20260128_WHICEAS(0);
-pp.sg639 = workflow_downloadScript_sg639_20260211_WHICEAS(1);
-pp.sg679 = workflow_downloadScript_sg679_20260205_WHICEAS(1);
+ppStruct.sg274 = workflow_downloadScript_sg274_20260128_WHICEAS(1);
+ppStruct.sg607 = workflow_downloadScript_sg607_20260128_WHICEAS(0); % don't preload because of comms issues
+ppStruct.sg639 = workflow_downloadScript_sg639_20260211_WHICEAS(1);
+ppStruct.sg679 = workflow_downloadScript_sg679_20260205_WHICEAS(1);
 
+%% create a travel metrics/status table
+
+% define targets - with midpoints for calculations
+targetsFiles = { ...
+    'targets_WHICEAS_SG274_1200km_WN_20260209_withMidpoints'; ...
+    'targets_WHICEAS_SG607_950km_LN_20260209_withMidpoints'; ...
+    'targets_WHICEAS_sg639_1200km_LS_20260211_withMidpoints'; ...
+    'targets_WHICEAS_sg679_1200km_WS_20260211_withMidpoints'};
+
+% define dive limits (to exclude rodeo)
+diveLimits = [92; 66; 1; 1];
+% SG274 rodeo dates/dives: deployed 01/29 0033 UTC, rodeo ended end of 
+% Dive 70 2/10 0816 UTC (296 hours or 12.4 days). WISPR off for Dives 71-91
+% (4 days), WISPR back on Dive 92 2/14 0957 UTC
+% SG607 rodeo dates/dives: deployed 01/28 2220 UTC, rodeo ended end of
+% Dive 65 2/10 1058 UTC
+
+% planned recovery dates
+plannedRecov = datetime({ ...
+    '2026-04-24 9:00'; ...
+    '2026-04-10 9:00'; ...
+    '2026-04-16 9:00'; ...
+    '2026-04-16 9:00' ...
+    });
+plannedRecov.TimeZone = 'Pacific/Honolulu';
+
+% make the table
+tm = createTravelMetrics_WHICEAS(ppStruct, gliders, missionPaths, ...
+    targetsFiles, diveLimits, plannedRecov);
+
+% save it
+writetable(tm, fullfile(path_repo, 'outputs', 'travelMetrics_all.csv'));
+writetable(tm, fullfile('A:\My Drive\Glider Projects\2026 WHICEAS Gliders', ...
+    'travelMetrics_all.csv'));
 
 %% create combined map
 
@@ -55,6 +95,7 @@ col_sg = [...
 col_slcm  = [109 192  53]/255; % green
 col_tgt = [0 0 0]; % black
 
+% define targets - simple for mapping
 targetsFiles = { ...
     'targets_WHICEAS_SG274_1200km_WN_20260209'; ...
     'targets_WHICEAS_SG607_950km_LN_20260209'; ...
@@ -81,11 +122,11 @@ baseFig.Position = [-1828 267 1200 700];
 % simplify axes labels
 plabel('PLabelLocation', 1, 'PLabelRound', 0, 'FontSize', 14);
 mlabel('MLabelLocation', 1, 'MLabelRound', 0, ...
-	'MLabelParallel', 'south', 'FontSize', 14);
+    'MLabelParallel', 'south', 'FontSize', 14);
 
 % plot gliders
 for g = 1:numel(gliders)
-    ppTmp = pp.(gliders{g});
+    ppTmp = ppStruct.(gliders{g});
     % plot simple targets
     [targets, ~] = readTargetsFile(fullfile(missionPaths{g}, targetsFiles{g}));
     plotm(targets.lat, targets.lon, 'Marker', 'o', 'MarkerSize', 2, ...
@@ -95,7 +136,7 @@ for g = 1:numel(gliders)
     % text(targets.lon-0.1, targets.lat+0.1, targets.name, 'FontSize', 6)
     % plot track
     h(g) = plotm(ppTmp.startLatitude, ppTmp.startLongitude, ...
-    	'Color', col_sg(g,:),'LineWidth', 3, 'DisplayName', gliders{g});
+        'Color', col_sg(g,:),'LineWidth', 3, 'DisplayName', gliders{g});
 end
 
 % add legend
@@ -103,6 +144,8 @@ legend(h, 'Location', 'southwest', 'FontSize', 14)
 % add title
 title('WHICEAS 2026', 'Interpreter', 'none')
 % save it
-exportgraphics(gca, fullfile('A:\My Drive\Glider Projects\WHICEAS 2026 Gliders', ...
+exportgraphics(gca, fullfile('A:\My Drive\Glider Projects\2026 WHICEAS Gliders', ...
+    'combined_map_latest.png'), 'Resolution', 600);
+exportgraphics(gca, fullfile(path_repo, 'outputs', ...
     'combined_map_latest.png'), 'Resolution', 600);
 
