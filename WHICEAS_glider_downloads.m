@@ -37,7 +37,7 @@ missionPaths = {
     };
 % cellfun(@(p) addpath(genpath(p)), missionPaths)
 
-%% Run each glider 
+%% Run each glider
 % this can be a little slow because of SSH and downloads
 
 % create output structure
@@ -49,18 +49,21 @@ ppStruct.sg607 = workflow_downloadScript_sg607_20260128_WHICEAS(0); % don't prel
 ppStruct.sg639 = workflow_downloadScript_sg639_20260211_WHICEAS(1);
 ppStruct.sg679 = workflow_downloadScript_sg679_20260205_WHICEAS(1);
 
-%% create a travel metrics/status table
+%% create a travel metrics/status table and plot
 
 % define targets - with midpoints for calculations
 targetsFiles = { ...
-    'targets_WHICEAS_SG274_1200km_WN_20260209_withMidpoints'; ...
-    'targets_WHICEAS_SG607_950km_LN_20260209_withMidpoints'; ...
-    'targets_WHICEAS_sg639_1200km_LS_20260211_withMidpoints'; ...
+    % 'targets_WHICEAS_SG274_1200km_WN_20260209_withMidpoints'; ...
+    'targets_WHICEAS_SG274_1050km_WN_20260225_withMidpoints'; ...
+    % 'targets_WHICEAS_SG607_950km_LN_20260209_withMidpoints'; ...
+    'targets_WHICEAS_SG607_1050km_LN_20260224_withMidpoints'; ...
+    % 'targets_WHICEAS_sg639_1200km_LS_20260211_withMidpoints'; ...
+        'targets_WHICEAS_sg639_1200km_LS_20260224_withMidpoints'; ...
     'targets_WHICEAS_sg679_1200km_WS_20260211_withMidpoints'};
 
 % define dive limits (to exclude rodeo)
 diveLimits = [92; 66; 1; 1];
-% SG274 rodeo dates/dives: deployed 01/29 0033 UTC, rodeo ended end of 
+% SG274 rodeo dates/dives: deployed 01/29 0033 UTC, rodeo ended end of
 % Dive 70 2/10 0816 UTC (296 hours or 12.4 days). WISPR off for Dives 71-91
 % (4 days), WISPR back on Dive 92 2/14 0957 UTC
 % SG607 rodeo dates/dives: deployed 01/28 2220 UTC, rodeo ended end of
@@ -68,10 +71,10 @@ diveLimits = [92; 66; 1; 1];
 
 % planned recovery dates
 plannedRecov = datetime({ ...
-    '2026-04-24 9:00'; ...
-    '2026-04-10 9:00'; ...
-    '2026-04-16 9:00'; ...
-    '2026-04-16 9:00' ...
+    '2026-04-09 9:00'; ...
+    '2026-04-08 9:00'; ...
+    '2026-04-14 9:00'; ...
+    '2026-04-14 9:00' ...
     });
 plannedRecov.TimeZone = 'Pacific/Honolulu';
 
@@ -105,15 +108,10 @@ targetsFiles = { ...
 % build basemap - use most recent config for bathy
 % use 274's cofnig to start
 CONFIG = agate('C:\Users\selene.fregosi\Desktop\sg274_20260128_WHICEAS\agate_config_sg274_20260128_WHICEAS.cnf');
-% north arrow, scale bar or map limits can be defined in the CONFIG file
-% specified above or manually set here
+% north arrow, map limits can be defined in the CONFIG file specified above or manually set here
 % e.g., to set north arrow location
 CONFIG.map.naLat = 23;
 CONFIG.map.naLon = -154;
-% set scale bar location
-% CONFIG.map.scalePos = [0.05 0.31];
-% CONFIG.map.scaleMajor = 100;
-% CONFIG.map.scaleMinor = 20;
 
 [baseFig] = createBasemap(CONFIG, 'bathy', 1, 'contourOn', 0, 'figNum', 2026);
 baseFig.Name = 'WHICEAS 2026';

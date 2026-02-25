@@ -33,12 +33,14 @@ function tm = createTravelMetrics_WHICEAS(ppStruct, gliders, missionPaths, targe
 %   Created with MATLAB ver.: 24.2.0.2740171 (R2024b) Update 1
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% create output table
+%% create output table
 tm = table;
 
 for g = 1:numel(gliders)
     ppTmp = ppStruct.(gliders{g});
     tm.glider(g) = gliders(g);
+    tm.deploy(g) = datetime(ppTmp.diveStartTime(diveLimits(g)), ...
+        'TimeZone','Pacific/Honolulu');
     % elapsed days and total distance over groun
     tm.missionElapsed(g) = days(ppTmp.diveEndTime(end) - ppTmp.diveStartTime(diveLimits(g)));
     tm.distTot_km(g) = sum(ppTmp.dog_km(diveLimits(g):end), 'omitnan');
@@ -87,4 +89,90 @@ for g = 1:numel(gliders)
     % add in planned recovery date
     tm.plannedRecov(g) = datetime(plannedRecov(g), 'Format', 'uuuu-MMM-dd HH:mm ZZZZ', ...
         'TimeZone', 'Pacific/Honolulu');
+
+end
+
+%% plot metrics
+figure; hold on
+
+nowT = datetime('now','TimeZone','Pacific/Honolulu');
+
+nG = height(tm);
+
+% Reverse order index (so first glider appears at top)
+plotOrder = nG:-1:1;
+
+for i = 1:nG
+
+    g = plotOrder(i);   % actual row in table
+    y = i;              % plotting row position
+
+    % ---- Mission baseline (gray) ----
+    plot([tm.deploy(g) tm.plannedRecov(g)], ...
+        [y y], 'Color',[0.8 0.8 0.8],'LineWidth',8)
+
+    % ---- Progress shading (blue) ----
+    progEnd = min(nowT, tm.plannedRecov(g));
+    plot([tm.deploy(g) progEnd], ...
+        [y y], 'Color',[0.2 0.4 0.8],'LineWidth',8)
+
+    % ---- Risk coloring ----
+    riskColor_full = getRiskColor(tm.eta(g), tm.plannedRecov(g));
+    riskColor_rec  = getRiskColor(tm.etaRec(g), tm.plannedRecov(g));
+
+    % ---- ETA markers ----
+    hFull = plot(tm.eta(g), y, 'o', ...
+        'MarkerFaceColor', riskColor_full, ...
+        'MarkerEdgeColor','k', 'MarkerSize',9);
+
+    hRec = plot(tm.etaRec(g), y, '^', ...
+        'MarkerFaceColor', riskColor_rec, ...
+        'MarkerEdgeColor','k', 'MarkerSize',9);
+
+    % ---- Numeric labels (days offset) ----
+    delta_full = days(tm.eta(g) - tm.plannedRecov(g));
+    delta_rec  = days(tm.etaRec(g) - tm.plannedRecov(g));
+
+    text(tm.eta(g) + days(0.2), y+0.1, ...
+        sprintf('%+.1f d', delta_full), ...
+        'FontSize',8)
+
+    text(tm.etaRec(g) + days(0.2), y-0.15, ...
+        sprintf('%+.1f d', delta_rec), ...
+        'FontSize',8)
+
+end
+
+% ---- Today line ----
+xline(nowT,'k--','Today')
+
+% ---- Axis formatting ----
+yticks(1:nG)
+yticklabels(tm.glider(plotOrder))
+
+ylim([0.5 nG+0.5])   % <-- padding top and bottom
+xlabel('Date (HST)')
+title('Glider Mission Schedule Status')
+grid on
+
+% ---- Legend (triangles vs circles only) ----
+legend([hFull hRec], ...
+    {'ETA (Full Mission Avg)','ETA (Last 5 Dives)'}, ...
+    'Location','southoutside', ...
+    'Orientation','horizontal')
+
+end
+
+%% risk color function
+function c = getRiskColor(eta, planned)
+delta = days(eta - planned);
+
+if delta <= 0
+    c = [0.2 0.7 0.2];      % green
+elseif delta <= 3
+    c = [0.9 0.7 0.1];      % yellow
+else
+    c = [0.85 0.2 0.2];     % red
+end
+
 end
