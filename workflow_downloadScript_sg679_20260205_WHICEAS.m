@@ -87,41 +87,11 @@ savefig(fullfile(path_status, [CONFIG.glider '_map.fig']))
 exportgraphics(gca, fullfile(path_status, [CONFIG.glider '_map.png']), ...
     'Resolution', 300)
 
-% % humidity and pressure - figNumList(2)
-% plotHumidityPressure(CONFIG, pp)
-% print(fullfile(path_status, [CONFIG.glider  '_humidityPressure.png']), '-dpng')
-% 
-% % battery usage/free space - figNumList(3)
-% plotBattUseFreeSpace(CONFIG, pp, 310)
-% print(fullfile(path_status, [CONFIG.glider '_battUseFreeSpace.png']), '-dpng')
-% 
-% % voltage pack use (power draw by device) - figNumList(4)
-% plotVoltagePackUse(CONFIG, pp)
-% print(fullfile(path_status, [CONFIG.glider '_usageByDevice.png']), '-dpng')
-% 
-% % voltage pack use (power draw by device, normalized by dive duration) - figNumList(5)
-% plotVoltagePackUse_norm(CONFIG, pp)
-% print(fullfile(path_status, [CONFIG.glider '_usageByDevice_normalized.png']), '-dpng')
-% 
-% % minimum reported voltages - figNumList(6)
-% plotMinVolt(CONFIG, pp)
-% print(fullfile(path_status, [CONFIG.glider '_minimumVoltage.png']), '-dpng')
-% % close
-% 
-% % PMAR space used per minute and over time (IF PMAR IS ACTIVE)
-% plotPmUsed(CONFIG, pp) 
-% 
-% % ERMA detection events from the most recent dive (IF WISPR/ERMA IS ACTIVE)
-% plotErmaDetections(CONFIG, path_bsLocal, pp.diveNum(end))
-% 
-% %% (4) print mission summary
-% 
-% % print errors reported on most recent dive
-% printErrors(CONFIG, size(pp,1), pp)
-% 
-% % print avg speed and rough estimate of total mission duration
-tm = printTravelMetrics(CONFIG, pp, fullfile(CONFIG.path.mission, ...
-	'targets'), 1);
+
+%% (4) print mission summary
+% print avg speed and rough estimate of total mission duration
+% tm = printTravelMetrics(CONFIG, pp, fullfile(CONFIG.path.mission, ...
+% 	'targets'), 1);
 % 
 % % specify planned recovery date and time
 % recovery = '2026-02-10 10:00:00';
