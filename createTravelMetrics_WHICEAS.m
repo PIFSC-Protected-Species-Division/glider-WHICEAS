@@ -93,17 +93,28 @@ for g = 1:numel(gliders)
 end
 
 %% plot metrics
-figure; hold on
 
+figure(2027); 
+clf; 
+set(gcf, 'Position', [2590 -204 800 560])
+hold on;
+
+% get limits
 nowT = datetime('now','TimeZone','Pacific/Honolulu');
+minDeploy = min(tm.deploy);
+maxDate   = max([tm.plannedRecov; tm.eta; tm.etaRec]);
 
+leftPad  = days(4);
+rightPad = days(2);
+
+xLeft  = minDeploy - leftPad;
+xRight = maxDate + rightPad;
+
+% plot in reverse order so numeric top to bottom
 nG = height(tm);
-
-% Reverse order index (so first glider appears at top)
 plotOrder = nG:-1:1;
 
 for i = 1:nG
-
     g = plotOrder(i);   % actual row in table
     y = i;              % plotting row position
 
@@ -141,7 +152,19 @@ for i = 1:nG
         sprintf('%+.1f d', delta_rec), ...
         'FontSize',8)
 
+% ---- Remaining distance label (aligned left) ----
+distStr = sprintf('%.0f km remaining', tm.distRem_km(g));
+
+text(xLeft + days(0.5), y - 0.25, ...
+    distStr, ...
+    'HorizontalAlignment','left', ...
+    'VerticalAlignment','top', ...
+    'FontSize',9)
+
+
+
 end
+
 
 % ---- Today line ----
 xline(nowT,'k--','Today')
@@ -151,8 +174,11 @@ yticks(1:nG)
 yticklabels(tm.glider(plotOrder))
 
 ylim([0.5 nG+0.5])   % <-- padding top and bottom
+% xlim([min(tm.deploy) - days(3), ...
+%       max([tm.plannedRecov; tm.eta; tm.etaRec]) + days(2)])
+xlim([xLeft xRight])
 xlabel('Date (HST)')
-title('Glider Mission Schedule Status')
+title('WHICEAS 2026 Recovery Planner')
 grid on
 
 % ---- Legend (triangles vs circles only) ----
@@ -161,18 +187,6 @@ legend([hFull hRec], ...
     'Location','southoutside', ...
     'Orientation','horizontal')
 
+hold off;
 end
 
-%% risk color function
-function c = getRiskColor(eta, planned)
-delta = days(eta - planned);
-
-if delta <= 0
-    c = [0.2 0.7 0.2];      % green
-elseif delta <= 3
-    c = [0.9 0.7 0.1];      % yellow
-else
-    c = [0.85 0.2 0.2];     % red
-end
-
-end
