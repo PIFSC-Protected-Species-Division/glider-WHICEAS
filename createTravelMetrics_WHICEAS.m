@@ -96,7 +96,8 @@ end
 
 figure(2027); 
 clf; 
-set(gcf, 'Position', [2590 -204 800 560])
+% set(gcf, 'Position', [2590 -204 800 560])
+set(gcf, 'Position', [2580 -4 800 560])
 hold on;
 
 % get limits

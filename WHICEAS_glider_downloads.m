@@ -124,8 +124,8 @@ CONFIG.map.naLon = -154;
 [baseFig] = createBasemap(CONFIG, 'bathy', 1, 'contourOn', 0, 'figNum', 2026);
 baseFig.Name = 'WHICEAS 2026';
 % baseFig.Position = [20    80    1200    700]; % set position on screen
-baseFig.Position = [2730 4 900 700]; % Newport office
-% baseFig.Position = [2720 5 900 700]; % Home office
+% baseFig.Position = [2730 4 900 700]; % Newport office
+baseFig.Position = [3160 2 900 700]; % Home office
 % simplify axes labels
 plabel('PLabelLocation', 1, 'PLabelRound', 0, 'FontSize', 14);
 mlabel('MLabelLocation', 1, 'MLabelRound', 0, ...
