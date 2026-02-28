@@ -125,3 +125,7 @@ exportgraphics(gca, fullfile(path_status, [CONFIG.glider '_map.png']), ...
 % tm = printRecoveryMetrics(CONFIG, pp, fullfile(CONFIG.path.mission, ...
 % 	'targets'), recovery, recTZ, 1);
 % 
+
+fprintf(1, 'SG607 done.\n\n')
+ 
+end
