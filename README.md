@@ -10,4 +10,4 @@ Repository for piloting and analysis of the 2026 WHICEAS Glider Survey
 
 ### Current status
 ![WHICEAS glider survey map](/outputs/combined_map_latest.png)
-_Map last updated: 2026-02-26_
+_Map last updated: 2026-02-28_
