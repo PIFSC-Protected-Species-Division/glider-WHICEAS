@@ -35,7 +35,14 @@ missionPaths = {
     'C:\Users\selene.fregosi\Desktop\sg639_20260211_WHICEAS'
     'C:\Users\selene.fregosi\Desktop\sg679_20260205_WHICEAS'
     };
-% cellfun(@(p) addpath(genpath(p)), missionPaths)
+
+% names of configuration files (this might differ across computers)
+configFiles = {
+fullfile(missionPaths, 'agate_config_sg274_20260128_WHICEAS.cnf');
+fullfile(missionPaths, 'agate_config_sg607_20260128_WHICEAS.cnf';
+fullfile(missionPaths, 'agate_config_sg639_20260211_WHICEAS.cnf';
+fullfile(missionPaths, 'agate_config_sg679_20260205_WHICEAS.cnf'
+};
 
 %% Run each glider
 % this can be a little slow because of SSH and downloads
@@ -44,22 +51,22 @@ missionPaths = {
 ppStruct = struct;
 
 % argument is to preload previous pp (1) or don't preload (0)
-ppStruct.sg274 = workflow_downloadScript_sg274_20260128_WHICEAS(1);
-ppStruct.sg607 = workflow_downloadScript_sg607_20260128_WHICEAS(0); % don't preload because of comms issues
-ppStruct.sg639 = workflow_downloadScript_sg639_20260211_WHICEAS(1);
-ppStruct.sg679 = workflow_downloadScript_sg679_20260205_WHICEAS(1);
+ppStruct.sg274 = workflow_downloadScript_sg274_20260128_WHICEAS(configFile, 1);
+ppStruct.sg607 = workflow_downloadScript_sg607_20260128_WHICEAS(configFile, 0); % don't preload because of comms issues
+ppStruct.sg639 = workflow_downloadScript_sg639_20260211_WHICEAS(configFile, 1);
+ppStruct.sg679 = workflow_downloadScript_sg679_20260205_WHICEAS(configFile, 1);
 
 %% create a travel metrics/status table and plot
 
 % define targets - with midpoints for calculations
 targetsMidpointsFiles = { ...
-    % 'targets_WHICEAS_SG274_1200km_WN_20260209_withMidpoints'; ...
-    'targets_WHICEAS_SG274_1050km_WN_20260225_withMidpoints'; ...
-    % 'targets_WHICEAS_SG607_950km_LN_20260209_withMidpoints'; ...
-    'targets_WHICEAS_SG607_1050km_LN_20260224_withMidpoints'; ...
-    % 'targets_WHICEAS_sg639_1200km_LS_20260211_withMidpoints'; ...
-    % 'targets_WHICEAS_sg639_1200km_LS_20260224_withMidpoints'; ...
-    'targets_WHICEAS_sg639_1200km_LS_20260228_withMidpoints'; ...
+    % 'targets_WHICEAS_SG274_1200km_WN_20260209_withMidpoints';
+    'targets_WHICEAS_SG274_1050km_WN_20260225_withMidpoints'; 
+    % 'targets_WHICEAS_SG607_950km_LN_20260209_withMidpoints'; 
+    'targets_WHICEAS_SG607_1050km_LN_20260224_withMidpoints'; 
+    % 'targets_WHICEAS_sg639_1200km_LS_20260211_withMidpoints';
+    % 'targets_WHICEAS_sg639_1200km_LS_20260224_withMidpoints'; 
+    'targets_WHICEAS_sg639_1200km_LS_20260228_withMidpoints';
     'targets_WHICEAS_sg679_1200km_WS_20260211_withMidpoints'};
 
 % define dive limits (to exclude rodeo)
@@ -72,10 +79,10 @@ diveLimits = [92; 66; 1; 1];
 
 % planned recovery dates
 plannedRecov = datetime({ ...
-    '2026-04-09 9:00'; ...
-    '2026-04-08 9:00'; ...
-    '2026-04-14 9:00'; ...
-    '2026-04-14 9:00' ...
+    '2026-04-09 9:00'; 
+    '2026-04-08 9:00'; 
+    '2026-04-14 9:00'; 
+    '2026-04-14 9:00'
     });
 plannedRecov.TimeZone = 'Pacific/Honolulu';
 
@@ -105,14 +112,14 @@ col_slcm  = [109 192  53]/255; % green
 col_tgt = [0 0 0]; % black
 
 % define targets - simple for mapping
-targetsFiles = { ...
-    % 'targets_WHICEAS_SG274_1200km_WN_20260209'; ...
-    'targets_WHICEAS_SG274_1050km_WN_20260225'; ...
-    % 'targets_WHICEAS_SG607_950km_LN_20260209'; ...
-    'targets_WHICEAS_SG607_1050km_LN_20260224'; ...
-    % 'targets_WHICEAS_sg639_1200km_LS_20260211; ...
-    % 'targets_WHICEAS_sg639_1200km_LS_20260224'; ...
-    'targets_WHICEAS_sg639_1200km_LS_20260228'; ...
+targetsFiles = {
+    % 'targets_WHICEAS_SG274_1200km_WN_20260209';
+    'targets_WHICEAS_SG274_1050km_WN_20260225';
+    % 'targets_WHICEAS_SG607_950km_LN_20260209';
+    'targets_WHICEAS_SG607_1050km_LN_20260224';
+    % 'targets_WHICEAS_sg639_1200km_LS_20260211;
+    % 'targets_WHICEAS_sg639_1200km_LS_20260224';
+    'targets_WHICEAS_sg639_1200km_LS_20260228';
     'targets_WHICEAS_sg679_1200km_WS_20260211'};
 
 % build basemap - use most recent config for bathy

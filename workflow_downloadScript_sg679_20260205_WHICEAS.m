@@ -1,4 +1,4 @@
-function pp = workflow_downloadScript_sg679_20260205_WHICEAS(preload)
+function pp = workflow_downloadScript_sg679_20260205_WHICEAS(configFile, preload)
 % WORKFLOW_DOWNLOADSCRIPT.M
 %	Download basestation files and generate piloting/monitoring plots
 %
@@ -34,13 +34,13 @@ function pp = workflow_downloadScript_sg679_20260205_WHICEAS(preload)
 %		S. Fregosi <selene.fregosi@gmail.com> <https://github.com/sfregosi>
 %	Created with MATLAB ver.: 9.13.0.2166757 (R2022b) Update 4
 %
-%	Updated:      8 February 2026
+%	Updated:      2 March 2026
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% 679
 
 % initialize agate
-CONFIG = agate('C:\Users\selene.fregosi\Desktop\sg679_20260205_WHICEAS\agate_config_sg679_20260205_WHICEAS.cnf');
+CONFIG = agate(configFile);
 
 % specify the local piloting folder for this trip in CONFIG.path.mission
 % set up nested folders for basestation files and piloting outputs
