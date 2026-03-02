@@ -11,7 +11,7 @@
 %		glider-WHICEAS GitHub repository
 %
 %	Authors:
-%		S. Fregosi <selene.fregosi@gmail.com> <https://github.com/sfregosi>
+%		S. Fregosi <pam_user@gmail.com> <https://github.com/sfregosi>
 %
 %	Updated:   2026 March 02
 %
@@ -19,8 +19,8 @@
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% combined script
 
 % add agate/repo to path
-path_agate = 'C:\Users\selene.fregosi\Documents\MATLAB\agate';
-path_repo = 'C:\Users\selene.fregosi\Documents\GitHub\glider-WHICEAS';
+path_agate = 'C:\Users\pam_user\Documents\MATLAB\agate';
+path_repo = 'C:\Users\pam_user\Documents\GitHub\glider-WHICEAS';
 addpath(genpath(path_agate));
 addpath(genpath(path_repo));
 warning off
@@ -30,18 +30,18 @@ gliders = {'sg274', 'sg607', 'sg639', 'sg679'};
 
 % set paths to glider mission olders and add to path
 missionPaths = {
-    'C:\Users\selene.fregosi\Desktop\sg274_20260128_WHICEAS'
-    'C:\Users\selene.fregosi\Desktop\sg607_20260128_WHICEAS'
-    'C:\Users\selene.fregosi\Desktop\sg639_20260211_WHICEAS'
-    'C:\Users\selene.fregosi\Desktop\sg679_20260205_WHICEAS'
+    'C:\Users\pam_user\Desktop\sg274_20260128_WHICEAS'
+    'C:\Users\pam_user\Desktop\sg607_20260128_WHICEAS'
+    'C:\Users\pam_user\Desktop\sg639_20260211_WHICEAS'
+    'C:\Users\pam_user\Desktop\sg679_20260205_WHICEAS'
     };
 
 % names of configuration files (this might differ across computers)
 configFiles = {
-fullfile(missionPaths, 'agate_config_sg274_20260128_WHICEAS.cnf');
-fullfile(missionPaths, 'agate_config_sg607_20260128_WHICEAS.cnf';
-fullfile(missionPaths, 'agate_config_sg639_20260211_WHICEAS.cnf';
-fullfile(missionPaths, 'agate_config_sg679_20260205_WHICEAS.cnf'
+fullfile(missionPaths, 'agate_config_sg274_20260128_WHICEAS_pam_user.cnf');
+fullfile(missionPaths, 'agate_config_sg607_20260128_WHICEAS_pam_user.cnf';
+fullfile(missionPaths, 'agate_config_sg639_20260211_WHICEAS_pam_user.cnf';
+fullfile(missionPaths, 'agate_config_sg679_20260205_WHICEAS_pam_user.cnf'
 };
 
 %% Run each glider
@@ -124,7 +124,7 @@ targetsFiles = {
 
 % build basemap - use most recent config for bathy
 % use 274's cofnig to start
-CONFIG = agate('C:\Users\selene.fregosi\Desktop\sg274_20260128_WHICEAS\agate_config_sg274_20260128_WHICEAS.cnf');
+CONFIG = agate('C:\Users\pam_user\Desktop\sg274_20260128_WHICEAS\agate_config_sg274_20260128_WHICEAS.cnf');
 % north arrow, map limits can be defined in the CONFIG file specified above or manually set here
 % e.g., to set north arrow location
 CONFIG.map.naLat = 23;
