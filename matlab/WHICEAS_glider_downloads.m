@@ -38,10 +38,10 @@ missionPaths = {
 
 % names of configuration files (this might differ across computers)
 configFiles = {
-fullfile(missionPaths, 'agate_config_sg274_20260128_WHICEAS.cnf');
-fullfile(missionPaths, 'agate_config_sg607_20260128_WHICEAS.cnf';
-fullfile(missionPaths, 'agate_config_sg639_20260211_WHICEAS.cnf';
-fullfile(missionPaths, 'agate_config_sg679_20260205_WHICEAS.cnf'
+fullfile(missionPaths{1}, 'agate_config_sg274_20260128_WHICEAS.cnf');
+fullfile(missionPaths{2}, 'agate_config_sg607_20260128_WHICEAS.cnf');
+fullfile(missionPaths{3}, 'agate_config_sg639_20260211_WHICEAS.cnf');
+fullfile(missionPaths{4}, 'agate_config_sg679_20260205_WHICEAS.cnf')
 };
 
 %% Run each glider
@@ -51,10 +51,10 @@ fullfile(missionPaths, 'agate_config_sg679_20260205_WHICEAS.cnf'
 ppStruct = struct;
 
 % argument is to preload previous pp (1) or don't preload (0)
-ppStruct.sg274 = workflow_downloadScript_sg274_20260128_WHICEAS(configFile, 1);
-ppStruct.sg607 = workflow_downloadScript_sg607_20260128_WHICEAS(configFile, 0); % don't preload because of comms issues
-ppStruct.sg639 = workflow_downloadScript_sg639_20260211_WHICEAS(configFile, 1);
-ppStruct.sg679 = workflow_downloadScript_sg679_20260205_WHICEAS(configFile, 1);
+ppStruct.sg274 = workflow_downloadScript_sg274_20260128_WHICEAS(configFiles{1}, 1);
+ppStruct.sg607 = workflow_downloadScript_sg607_20260128_WHICEAS(configFiles{2}, 0); % don't preload because of comms issues
+ppStruct.sg639 = workflow_downloadScript_sg639_20260211_WHICEAS(configFiles{3}, 1);
+ppStruct.sg679 = workflow_downloadScript_sg679_20260205_WHICEAS(configFiles{4}, 1);
 
 %% create a travel metrics/status table and plot
 
