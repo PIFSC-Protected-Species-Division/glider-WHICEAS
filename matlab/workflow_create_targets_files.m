@@ -1,8 +1,11 @@
 % WORKFLOW_CREATE_TARGETS_FILES.M
-%	One-line description here, please
+%	Script for creating WHICEAS glider targets files
 %
 %	Description:
-%		Detailed description here, please
+%		This script converts Google Earth KML files to properly formatted
+%		Seaglider targets files and other relevant targets-related files
+%		including targets with and without 20 km midpoints, bathymetry
+%		cross section plots, and interpolated waypoint tables for the Navy
 %
 %	Notes
 %
@@ -12,7 +15,7 @@
 %	Authors:
 %		S. Fregosi <selene.fregosi@gmail.com> <https://github.com/sfregosi>
 %
-%	Updated:   2026 February 09
+%	Updated:   2026 March 09
 %
 %	Created with MATLAB ver.: 24.2.0.2740171 (R2024b) Update 1
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -184,14 +187,13 @@ writetable(interpTrack, fullfile(CONFIG.path.mission, ...
 % tracks used:
 % targets_sg679_WS_20260204_withMidpoints (had bad RECV location)
 % WHICEAS_sg679_1200km_WS_20260211.kml -> targets_WHICEAS_sg679_1200km_WS_20260211
+% WHICEAS_sg679_1120km_WS_20260309.kml -> targets_WHICEAS_sg679_1120km_WS_20260309
 
-% using draft_track_1200km_M1_WS_alt1
 % saved single track as kml (saved to desktop mission folder)
-% renamed to WHICEAS_sg679_1200km_WS_20260211.kml (to preserve create date)
 CONFIG = agate(fullfile('C:\Users\selene.fregosi\Desktop\', 'sg679_20260205_WHICEAS', ...
     'agate_config_sg679_20260205_WHICEAS.cnf'));
 
-kmlFile = fullfile(CONFIG.path.mission, 'WHICEAS_sg679_1200km_WS_20260211.kml');
+kmlFile = fullfile(CONFIG.path.mission, 'WHICEAS_sg679_1120km_WS_20260309.kml');
 % first make targets file without spacing
 targetsOut = makeTargetsFile(CONFIG, kmlFile, 'method', 'WS', ...
     'radius', 2000);
@@ -201,8 +203,7 @@ targetsOut = makeTargetsFile(CONFIG, kmlFile, 'method', 'WS', ...
 % now make with 20 km spacing
 targetsOut = makeTargetsFile(CONFIG, kmlFile, 'method', 'WS', ...
     'radius', 2000, 'spacing', 20);
-% this has 61 waypoints total but main is 10 points + RECV
-% so plot to see turn points
+% this has 60 total waypoints (incl RECV), main only has 10 total
 mapPlannedTrack(CONFIG, targetsOut);
 % Used map to create names text file with WS01, WS1a, WS1b, WS02, WS2a,
 % WS2b, etc.
@@ -211,18 +212,18 @@ mapPlannedTrack(CONFIG, targetsOut);
 targetsOut = makeTargetsFile(CONFIG, kmlFile, 'method', 'file', ...
     'radius', 2000, 'spacing', 20, ...
     'wpFile', fullfile(CONFIG.path.mission, ...
-    'targets_WHICEAS_sg679_1200km_WS_20260211_withMidpoints_names.txt'));
+    'targets_WHICEAS_sg679_1120km_WS_20260309_withMidpoints_names.txt'));
 
 % renamed this to add _withMidpoints to the name
 % plot again for a final check
 mapPlannedTrack(CONFIG, fullfile(CONFIG.path.mission, ...
-    'targets_WHICEAS_sg679_1200km_WS_20260211_withMidpoints'));
+    'targets_WHICEAS_sg679_1120km_WS_20260309_withMidpoints'));
 
 % plot bathymap
 plotTrackBathyProfile(CONFIG, 'targetsFile', fullfile(CONFIG.path.mission, ...
-    'targets_WHICEAS_sg679_1200km_WS_20260211'));
+    'targets_WHICEAS_sg679_1120km_WS_20260309'));
 exportgraphics(gca, fullfile(CONFIG.path.mission, ...
-    'targets_WHICEAS_sg679_1200km_WS_20260211_bathyProfile.png'), ...
+    'targets_WHICEAS_sg679_1120km_WS_20260309_bathyProfile.png'), ...
     'Resolution', 600);
 
 % create table for the Navy
