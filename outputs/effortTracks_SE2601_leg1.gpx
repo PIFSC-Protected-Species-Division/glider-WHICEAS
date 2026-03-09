@@ -1,0 +1,1672 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<gpx version="1.1" creator="R trackToGPX.R" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata><bounds minlat="18.176999" minlon="-161.021167" maxlat="24.066500" maxlon="-156.076833"/></metadata>
+<trk>
+  <name>2601_2026-01-25T11:49:00-0800_seg1_avgBft3.7</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-25T11:49:00-0800, effort segment 1, avg Beaufort SS 3.7</desc>
+  <trkseg>
+    <trkpt lat="22.9816666666667" lon="-158.274333333333">
+      <time>2026-01-25T11:49:00-0800</time>
+    </trkpt>
+    <trkpt lat="23.3133333005661" lon="-158.273829559638">
+      <time>2026-01-25T14:08:38-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-25T16:49:44-0800_seg2_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-25T16:49:44-0800, effort segment 2, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="23.3491666666667" lon="-158.204166666667">
+      <time>2026-01-25T16:49:44-0800</time>
+    </trkpt>
+    <trkpt lat="23.3638333203794" lon="-158.275499056161">
+      <time>2026-01-25T17:13:15-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-25T17:13:54-0800_seg3_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-25T17:13:54-0800, effort segment 3, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="23.3656666666667" lon="-158.275333333333">
+      <time>2026-01-25T17:13:54-0800</time>
+    </trkpt>
+    <trkpt lat="23.3689999868273" lon="-158.275166666667">
+      <time>2026-01-25T17:15:09-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-25T17:15:28-0800_seg4_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-25T17:15:28-0800, effort segment 4, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="23.3698333333333" lon="-158.275166666667">
+      <time>2026-01-25T17:15:28-0800</time>
+    </trkpt>
+    <trkpt lat="23.3766666193376" lon="-158.274834277205">
+      <time>2026-01-25T17:17:54-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-26T07:24:04-0800_seg5_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-26T07:24:04-0800, effort segment 5, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="23.8336666666667" lon="-159.181833333333">
+      <time>2026-01-26T07:24:04-0800</time>
+    </trkpt>
+    <trkpt lat="23.0823332656153" lon="-159.182166666667">
+      <time>2026-01-26T12:22:11-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-26T14:11:02-0800_seg6_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-26T14:11:02-0800, effort segment 6, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="23.0648333333333" lon="-159.114666666667">
+      <time>2026-01-26T14:11:02-0800</time>
+    </trkpt>
+    <trkpt lat="23.0528332650424" lon="-159.11633145014">
+      <time>2026-01-26T14:15:54-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-26T14:22:06-0800_seg7_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-26T14:22:06-0800, effort segment 7, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="23.0376666666667" lon="-159.118833333333">
+      <time>2026-01-26T14:22:06-0800</time>
+    </trkpt>
+    <trkpt lat="22.7703333130697" lon="-159.162332393863">
+      <time>2026-01-26T16:10:54-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-26T16:57:06-0800_seg8_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-26T16:57:06-0800, effort segment 8, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="22.7636666666667" lon="-159.177333333333">
+      <time>2026-01-26T16:57:06-0800</time>
+    </trkpt>
+    <trkpt lat="22.6028331586209" lon="-159.181833333333">
+      <time>2026-01-26T17:59:45-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-27T07:28:04-0800_seg9_avgBft2.49</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-27T07:28:04-0800, effort segment 9, avg Beaufort SS 2.49</desc>
+  <trkseg>
+    <trkpt lat="22.422" lon="-160.080666666667">
+      <time>2026-01-27T07:28:04-0800</time>
+    </trkpt>
+    <trkpt lat="22.5276667719554" lon="-160.073836147177">
+      <time>2026-01-27T08:10:18-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-27T08:29:22-0800_seg10_avgBft4.45</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-27T08:29:22-0800, effort segment 10, avg Beaufort SS 4.45</desc>
+  <trkseg>
+    <trkpt lat="22.5696666666667" lon="-160.084666666667">
+      <time>2026-01-27T08:29:22-0800</time>
+    </trkpt>
+    <trkpt lat="23.0401666717763" lon="-160.084833333333">
+      <time>2026-01-27T11:39:44-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-27T12:11:32-0800_seg11_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-27T12:11:32-0800, effort segment 11, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="23.0578333333333" lon="-160.046666666667">
+      <time>2026-01-27T12:11:32-0800</time>
+    </trkpt>
+    <trkpt lat="23.3281666563951" lon="-160.072165723196">
+      <time>2026-01-27T13:57:18-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-27T14:42:16-0800_seg12_avgBft4.89</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-27T14:42:16-0800, effort segment 12, avg Beaufort SS 4.89</desc>
+  <trkseg>
+    <trkpt lat="23.3808333333333" lon="-160.101333333333">
+      <time>2026-01-27T14:42:16-0800</time>
+    </trkpt>
+    <trkpt lat="23.495833285156" lon="-160.10033427806">
+      <time>2026-01-27T15:26:20-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-27T15:54:40-0800_seg13_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-27T15:54:40-0800, effort segment 13, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="23.5073333333333" lon="-160.055833333333">
+      <time>2026-01-27T15:54:40-0800</time>
+    </trkpt>
+    <trkpt lat="23.8296665789779" lon="-160.091829544933">
+      <time>2026-01-27T17:48:18-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-27T17:50:58-0800_seg14_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-27T17:50:58-0800, effort segment 14, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="23.8296666666667" lon="-160.097666666667">
+      <time>2026-01-27T17:50:58-0800</time>
+    </trkpt>
+    <trkpt lat="23.7911667137482" lon="-160.145160985426">
+      <time>2026-01-27T18:14:15-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-28T07:25:48-0800_seg15_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-28T07:25:48-0800, effort segment 15, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="23.6361666666667" lon="-160.541">
+      <time>2026-01-28T07:25:48-0800</time>
+    </trkpt>
+    <trkpt lat="23.5451667438217" lon="-160.547834278393">
+      <time>2026-01-28T07:58:37-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-28T09:52:24-0800_seg16_avgBft5.85</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-28T09:52:24-0800, effort segment 16, avg Beaufort SS 5.85</desc>
+  <trkseg>
+    <trkpt lat="23.4281666666667" lon="-160.542666666667">
+      <time>2026-01-28T09:52:24-0800</time>
+    </trkpt>
+    <trkpt lat="23.1411666027715" lon="-160.539833333333">
+      <time>2026-01-28T11:33:43-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-28T12:17:19-0800_seg17_avgBft5.99</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-28T12:17:19-0800, effort segment 17, avg Beaufort SS 5.99</desc>
+  <trkseg>
+    <trkpt lat="23.0926666666667" lon="-160.539666666667">
+      <time>2026-01-28T12:17:19-0800</time>
+    </trkpt>
+    <trkpt lat="22.8263331930976" lon="-160.535833333333">
+      <time>2026-01-28T13:49:51-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-28T15:08:47-0800_seg18_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-28T15:08:47-0800, effort segment 18, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="22.8038333333333" lon="-160.503166666667">
+      <time>2026-01-28T15:08:47-0800</time>
+    </trkpt>
+    <trkpt lat="22.4818328243475" lon="-160.530830520384">
+      <time>2026-01-28T17:08:22-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-28T17:36:41-0800_seg19_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-28T17:36:41-0800, effort segment 19, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="22.453" lon="-160.529">
+      <time>2026-01-28T17:36:41-0800</time>
+    </trkpt>
+    <trkpt lat="22.3303332957691" lon="-160.531666666667">
+      <time>2026-01-28T18:21:08-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-29T07:36:17-0800_seg20_avgBft3</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-29T07:36:17-0800, effort segment 20, avg Beaufort SS 3</desc>
+  <trkseg>
+    <trkpt lat="21.7943333333333" lon="-159.628333333333">
+      <time>2026-01-29T07:36:17-0800</time>
+    </trkpt>
+    <trkpt lat="21.5644996885329" lon="-159.628333333333">
+      <time>2026-01-29T09:04:36-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-29T11:06:09-0800_seg21_avgBft3.24</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-29T11:06:09-0800, effort segment 21, avg Beaufort SS 3.24</desc>
+  <trkseg>
+    <trkpt lat="21.4703333333333" lon="-159.628">
+      <time>2026-01-29T11:06:09-0800</time>
+    </trkpt>
+    <trkpt lat="21.3451663939656" lon="-159.627333333333">
+      <time>2026-01-29T11:53:55-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-29T12:45:59-0800_seg22_avgBft3.33</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-29T12:45:59-0800, effort segment 22, avg Beaufort SS 3.33</desc>
+  <trkseg>
+    <trkpt lat="21.3048333333333" lon="-159.607166666667">
+      <time>2026-01-29T12:45:59-0800</time>
+    </trkpt>
+    <trkpt lat="21.3303337262881" lon="-159.189">
+      <time>2026-01-29T15:42:04-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-29T15:42:18-0800_seg23_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-29T15:42:18-0800, effort segment 23, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="21.331" lon="-159.189">
+      <time>2026-01-29T15:42:18-0800</time>
+    </trkpt>
+    <trkpt lat="21.4968333333333" lon="-159.183333333333">
+      <time>2026-01-29T16:41:26-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-29T17:22:32-0800_seg24_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-29T17:22:32-0800, effort segment 24, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="21.5623333333333" lon="-159.130833333333">
+      <time>2026-01-29T17:22:32-0800</time>
+    </trkpt>
+    <trkpt lat="21.5688340245098" lon="-159.133160146199">
+      <time>2026-01-29T17:25:01-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-30T10:03:33-0800_seg25_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-30T10:03:33-0800, effort segment 25, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="22.3743333333333" lon="-158.988666666667">
+      <time>2026-01-30T10:03:33-0800</time>
+    </trkpt>
+    <trkpt lat="22.3738333333338" lon="-158.734334273061">
+      <time>2026-01-30T11:33:56-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-30T11:39:24-0800_seg26_avgBft4.08</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-30T11:39:24-0800, effort segment 26, avg Beaufort SS 4.08</desc>
+  <trkseg>
+    <trkpt lat="22.3813333333333" lon="-158.730166666667">
+      <time>2026-01-30T11:39:24-0800</time>
+    </trkpt>
+    <trkpt lat="22.7833334500363" lon="-158.729333333333">
+      <time>2026-01-30T14:17:31-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-30T14:42:34-0800_seg27_avgBft4.1</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-30T14:42:34-0800, effort segment 27, avg Beaufort SS 4.1</desc>
+  <trkseg>
+    <trkpt lat="22.821" lon="-158.729333333333">
+      <time>2026-01-30T14:42:34-0800</time>
+    </trkpt>
+    <trkpt lat="22.931333412679" lon="-158.729333333333">
+      <time>2026-01-30T15:24:53-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-30T15:36:40-0800_seg28_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-30T15:36:40-0800, effort segment 28, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="22.9623333333333" lon="-158.729333333333">
+      <time>2026-01-30T15:36:40-0800</time>
+    </trkpt>
+    <trkpt lat="22.9955001056988" lon="-158.729166666667">
+      <time>2026-01-30T15:49:39-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-30T15:53:04-0800_seg29_avgBft4.17</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-30T15:53:04-0800, effort segment 29, avg Beaufort SS 4.17</desc>
+  <trkseg>
+    <trkpt lat="23.0043333333333" lon="-158.729333333333">
+      <time>2026-01-30T15:53:04-0800</time>
+    </trkpt>
+    <trkpt lat="23.3313333223314" lon="-158.728833333333">
+      <time>2026-01-30T17:56:05-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-30T18:05:03-0800_seg30_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-30T18:05:03-0800, effort segment 30, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="23.3546666666667" lon="-158.729166666667">
+      <time>2026-01-30T18:05:03-0800</time>
+    </trkpt>
+    <trkpt lat="23.3808332675062" lon="-158.729665722766">
+      <time>2026-01-30T18:15:10-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-31T08:52:42-0800_seg31_avgBft3</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-31T08:52:42-0800, effort segment 31, avg Beaufort SS 3</desc>
+  <trkseg>
+    <trkpt lat="24.0665" lon="-158.447333333333">
+      <time>2026-01-31T08:52:42-0800</time>
+    </trkpt>
+    <trkpt lat="23.9838335399679" lon="-158.428338074316">
+      <time>2026-01-31T09:24:42-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-31T09:43:59-0800_seg32_avgBft3.17</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-31T09:43:59-0800, effort segment 32, avg Beaufort SS 3.17</desc>
+  <trkseg>
+    <trkpt lat="23.9355" lon="-158.411333333333">
+      <time>2026-01-31T09:43:59-0800</time>
+    </trkpt>
+    <trkpt lat="23.590333724266" lon="-158.203395728839">
+      <time>2026-01-31T12:15:01-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-31T12:15:55-0800_seg33_avgBft3.35</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-31T12:15:55-0800, effort segment 33, avg Beaufort SS 3.35</desc>
+  <trkseg>
+    <trkpt lat="23.5888333333333" lon="-158.201333333333">
+      <time>2026-01-31T12:15:55-0800</time>
+    </trkpt>
+    <trkpt lat="23.4950000808195" lon="-158.050356006394">
+      <time>2026-01-31T13:20:42-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-31T13:29:27-0800_seg34_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-31T13:29:27-0800, effort segment 34, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="23.487" lon="-158.036833333333">
+      <time>2026-01-31T13:29:27-0800</time>
+    </trkpt>
+    <trkpt lat="23.4826667332119" lon="-158.029685559176">
+      <time>2026-01-31T13:32:30-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-31T14:05:01-0800_seg35_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-31T14:05:01-0800, effort segment 35, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="23.4403333333333" lon="-157.959166666667">
+      <time>2026-01-31T14:05:01-0800</time>
+    </trkpt>
+    <trkpt lat="23.3623333434875" lon="-157.838172329396">
+      <time>2026-01-31T14:57:28-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-01-31T14:58:12-0800_seg36_avgBft3.62</name>
+  <desc>Vessel track for Cruise 2601, 2026-01-31T14:58:12-0800, effort segment 36, avg Beaufort SS 3.62</desc>
+  <trkseg>
+    <trkpt lat="23.3606666666667" lon="-157.837666666667">
+      <time>2026-01-31T14:58:12-0800</time>
+    </trkpt>
+    <trkpt lat="22.8261663954135" lon="-157.818167606688">
+      <time>2026-01-31T18:16:59-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-01T07:18:47-0800_seg37_avgBft3</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-01T07:18:47-0800, effort segment 37, avg Beaufort SS 3</desc>
+  <trkseg>
+    <trkpt lat="21.154" lon="-157.796">
+      <time>2026-02-01T07:18:47-0800</time>
+    </trkpt>
+    <trkpt lat="21.1151662315395" lon="-157.796999071495">
+      <time>2026-02-01T07:33:47-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-01T07:59:48-0800_seg38_avgBft3</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-01T07:59:48-0800, effort segment 38, avg Beaufort SS 3</desc>
+  <trkseg>
+    <trkpt lat="21.0921666666667" lon="-157.754166666667">
+      <time>2026-02-01T07:59:48-0800</time>
+    </trkpt>
+    <trkpt lat="21.0546664879236" lon="-157.772160169755">
+      <time>2026-02-01T08:16:34-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-01T08:33:05-0800_seg39_avgBft4.02</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-01T08:33:05-0800, effort segment 39, avg Beaufort SS 4.02</desc>
+  <trkseg>
+    <trkpt lat="21.0475" lon="-157.803">
+      <time>2026-02-01T08:33:05-0800</time>
+    </trkpt>
+    <trkpt lat="20.2668330937908" lon="-157.844666666667">
+      <time>2026-02-01T13:49:06-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-01T14:57:26-0800_seg40_avgBft4.97</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-01T14:57:26-0800, effort segment 40, avg Beaufort SS 4.97</desc>
+  <trkseg>
+    <trkpt lat="20.2433333333333" lon="-157.8225">
+      <time>2026-02-01T14:57:26-0800</time>
+    </trkpt>
+    <trkpt lat="19.7219983171957" lon="-157.848666666667">
+      <time>2026-02-01T18:13:32-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-02T07:15:00-0800_seg41_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-02T07:15:00-0800, effort segment 41, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="19.4861666666667" lon="-157.402166666667">
+      <time>2026-02-02T07:15:00-0800</time>
+    </trkpt>
+    <trkpt lat="19.4425" lon="-157.407833333333">
+      <time>2026-02-02T07:33:36-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-02T07:35:24-0800_seg42_avgBft4.93</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-02T07:35:24-0800, effort segment 42, avg Beaufort SS 4.93</desc>
+  <trkseg>
+    <trkpt lat="19.4381666666667" lon="-157.408">
+      <time>2026-02-02T07:35:24-0800</time>
+    </trkpt>
+    <trkpt lat="19.0188332506796" lon="-157.413165750875">
+      <time>2026-02-02T10:25:38-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-02T10:43:59-0800_seg43_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-02T10:43:59-0800, effort segment 43, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="18.9928333333333" lon="-157.412833333333">
+      <time>2026-02-02T10:43:59-0800</time>
+    </trkpt>
+    <trkpt lat="18.949831480125" lon="-157.413832418321">
+      <time>2026-02-02T11:01:23-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-02T11:15:28-0800_seg44_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-02T11:15:28-0800, effort segment 44, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="18.9153333333333" lon="-157.414">
+      <time>2026-02-02T11:15:28-0800</time>
+    </trkpt>
+    <trkpt lat="18.8326666666667" lon="-157.414333333333">
+      <time>2026-02-02T11:48:47-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-02T13:11:18-0800_seg45_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-02T13:11:18-0800, effort segment 45, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="18.782" lon="-157.359333333333">
+      <time>2026-02-02T13:11:18-0800</time>
+    </trkpt>
+    <trkpt lat="18.7631652654211" lon="-157.367493602622">
+      <time>2026-02-02T13:19:10-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-02T13:51:05-0800_seg46_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-02T13:51:05-0800, effort segment 46, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="18.7578333333333" lon="-157.420833333333">
+      <time>2026-02-02T13:51:05-0800</time>
+    </trkpt>
+    <trkpt lat="18.7064989367843" lon="-157.416166666667">
+      <time>2026-02-02T14:12:52-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-02T14:56:12-0800_seg47_avgBft4.88</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-02T14:56:12-0800, effort segment 47, avg Beaufort SS 4.88</desc>
+  <trkseg>
+    <trkpt lat="18.6538333333333" lon="-157.4165">
+      <time>2026-02-02T14:56:12-0800</time>
+    </trkpt>
+    <trkpt lat="18.1769989231899" lon="-157.420333333333">
+      <time>2026-02-02T17:52:44-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-03T07:54:31-0800_seg48_avgBft5.17</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-03T07:54:31-0800, effort segment 48, avg Beaufort SS 5.17</desc>
+  <trkseg>
+    <trkpt lat="18.7795" lon="-158.338333333333">
+      <time>2026-02-03T07:54:31-0800</time>
+    </trkpt>
+    <trkpt lat="19.3498343347063" lon="-158.292166666667">
+      <time>2026-02-03T11:47:23-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-03T11:47:31-0800_seg49_avgBft4.22</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-03T11:47:31-0800, effort segment 49, avg Beaufort SS 4.22</desc>
+  <trkseg>
+    <trkpt lat="19.3501666666667" lon="-158.292166666667">
+      <time>2026-02-03T11:47:31-0800</time>
+    </trkpt>
+    <trkpt lat="19.7838342996994" lon="-158.289832413263">
+      <time>2026-02-03T14:33:26-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-03T14:59:15-0800_seg50_avgBft4.51</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-03T14:59:15-0800, effort segment 50, avg Beaufort SS 4.51</desc>
+  <trkseg>
+    <trkpt lat="19.8211666666667" lon="-158.2895">
+      <time>2026-02-03T14:59:15-0800</time>
+    </trkpt>
+    <trkpt lat="20.0500005764581" lon="-158.288834255038">
+      <time>2026-02-03T16:27:03-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-04T07:24:25-0800_seg51_avgBft3.48</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-04T07:24:25-0800, effort segment 51, avg Beaufort SS 3.48</desc>
+  <trkseg>
+    <trkpt lat="20.5021666666667" lon="-159.177333333333">
+      <time>2026-02-04T07:24:25-0800</time>
+    </trkpt>
+    <trkpt lat="21.1155002611573" lon="-159.179333333333">
+      <time>2026-02-04T11:14:41-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-04T12:12:50-0800_seg52_avgBft3</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-04T12:12:50-0800, effort segment 52, avg Beaufort SS 3</desc>
+  <trkseg>
+    <trkpt lat="21.16" lon="-159.188666666667">
+      <time>2026-02-04T12:12:50-0800</time>
+    </trkpt>
+    <trkpt lat="21.1841671728684" lon="-159.217820327768">
+      <time>2026-02-04T12:26:34-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-04T12:32:15-0800_seg53_avgBft3.19</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-04T12:32:15-0800, effort segment 53, avg Beaufort SS 3.19</desc>
+  <trkseg>
+    <trkpt lat="21.194" lon="-159.230166666667">
+      <time>2026-02-04T12:32:15-0800</time>
+    </trkpt>
+    <trkpt lat="21.5875003759466" lon="-159.665987888954">
+      <time>2026-02-04T16:00:30-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-04T17:14:46-0800_seg54_avgBft3.54</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-04T17:14:46-0800, effort segment 54, avg Beaufort SS 3.54</desc>
+  <trkseg>
+    <trkpt lat="21.6508333333333" lon="-159.724666666667">
+      <time>2026-02-04T17:14:46-0800</time>
+    </trkpt>
+    <trkpt lat="21.6149998658002" lon="-159.904648962383">
+      <time>2026-02-04T18:20:41-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-05T09:06:08-0800_seg55_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-05T09:06:08-0800, effort segment 55, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="22.0516666666667" lon="-160.4745">
+      <time>2026-02-05T09:06:08-0800</time>
+    </trkpt>
+    <trkpt lat="22.101" lon="-160.542333333333">
+      <time>2026-02-05T09:38:48-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-05T09:42:49-0800_seg56_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-05T09:42:49-0800, effort segment 56, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="22.1061666666667" lon="-160.551666666667">
+      <time>2026-02-05T09:42:49-0800</time>
+    </trkpt>
+    <trkpt lat="22.1203333572759" lon="-160.576164797393">
+      <time>2026-02-05T09:53:30-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-05T09:55:52-0800_seg57_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-05T09:55:52-0800, effort segment 57, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="22.1236666666667" lon="-160.581333333333">
+      <time>2026-02-05T09:55:52-0800</time>
+    </trkpt>
+    <trkpt lat="22.1288334261134" lon="-160.590493453081">
+      <time>2026-02-05T09:59:56-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-05T10:10:48-0800_seg58_avgBft5.28</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-05T10:10:48-0800, effort segment 58, avg Beaufort SS 5.28</desc>
+  <trkseg>
+    <trkpt lat="22.1428333333333" lon="-160.615166666667">
+      <time>2026-02-05T10:10:48-0800</time>
+    </trkpt>
+    <trkpt lat="22.2680001425912" lon="-160.831823035099">
+      <time>2026-02-05T11:48:14-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-05T11:57:44-0800_seg59_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-05T11:57:44-0800, effort segment 59, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="22.2808333333333" lon="-160.852833333333">
+      <time>2026-02-05T11:57:44-0800</time>
+    </trkpt>
+    <trkpt lat="22.3710003292545" lon="-160.979646992002">
+      <time>2026-02-05T12:57:11-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-05T14:21:18-0800_seg60_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-05T14:21:18-0800, effort segment 60, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="22.375" lon="-161.021166666667">
+      <time>2026-02-05T14:21:18-0800</time>
+    </trkpt>
+    <trkpt lat="22.3743332786846" lon="-161.020835207075">
+      <time>2026-02-05T14:21:37-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-05T14:21:44-0800_seg61_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-05T14:21:44-0800, effort segment 61, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="22.3741666666667" lon="-161.020833333333">
+      <time>2026-02-05T14:21:44-0800</time>
+    </trkpt>
+    <trkpt lat="21.9718327268622" lon="-160.976833333333">
+      <time>2026-02-05T17:08:53-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-05T17:43:55-0800_seg62_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-05T17:43:55-0800, effort segment 62, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="21.9168333333333" lon="-160.945">
+      <time>2026-02-05T17:43:55-0800</time>
+    </trkpt>
+    <trkpt lat="21.897999776949" lon="-160.949830532239">
+      <time>2026-02-05T17:51:24-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-06T07:25:43-0800_seg63_avgBft4.19</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-06T07:25:43-0800, effort segment 63, avg Beaufort SS 4.19</desc>
+  <trkseg>
+    <trkpt lat="21.4918333333333" lon="-160.074166666667">
+      <time>2026-02-06T07:25:43-0800</time>
+    </trkpt>
+    <trkpt lat="21.2491662172191" lon="-160.073166666667">
+      <time>2026-02-06T08:58:01-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-06T10:41:35-0800_seg64_avgBft3.98</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-06T10:41:35-0800, effort segment 64, avg Beaufort SS 3.98</desc>
+  <trkseg>
+    <trkpt lat="21.2438333333333" lon="-160.074">
+      <time>2026-02-06T10:41:35-0800</time>
+    </trkpt>
+    <trkpt lat="20.6788328651631" lon="-160.068333333333">
+      <time>2026-02-06T14:05:56-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-06T15:23:47-0800_seg65_avgBft1.79</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-06T15:23:47-0800, effort segment 65, avg Beaufort SS 1.79</desc>
+  <trkseg>
+    <trkpt lat="20.5506666666667" lon="-160.068833333333">
+      <time>2026-02-06T15:23:47-0800</time>
+    </trkpt>
+    <trkpt lat="20.4601666096448" lon="-160.067">
+      <time>2026-02-06T15:57:30-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-06T16:33:05-0800_seg66_avgBft1</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-06T16:33:05-0800, effort segment 66, avg Beaufort SS 1</desc>
+  <trkseg>
+    <trkpt lat="20.3903333333333" lon="-160.066333333333">
+      <time>2026-02-06T16:33:05-0800</time>
+    </trkpt>
+    <trkpt lat="20.3076651891811" lon="-160.067167590009">
+      <time>2026-02-06T17:02:58-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-06T17:31:45-0800_seg67_avgBft1</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-06T17:31:45-0800, effort segment 67, avg Beaufort SS 1</desc>
+  <trkseg>
+    <trkpt lat="20.3108333333333" lon="-160.049833333333">
+      <time>2026-02-06T17:31:45-0800</time>
+    </trkpt>
+    <trkpt lat="20.2784989856969" lon="-160.065834256493">
+      <time>2026-02-06T17:46:49-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-07T07:44:12-0800_seg68_avgBft4.89</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-07T07:44:12-0800, effort segment 68, avg Beaufort SS 4.89</desc>
+  <trkseg>
+    <trkpt lat="19.9068333333333" lon="-158.733333333333">
+      <time>2026-02-07T07:44:12-0800</time>
+    </trkpt>
+    <trkpt lat="19.3488333333333" lon="-158.734833333333">
+      <time>2026-02-07T11:36:03-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-07T11:42:09-0800_seg69_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-07T11:42:09-0800, effort segment 69, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="19.3405" lon="-158.724666666667">
+      <time>2026-02-07T11:42:09-0800</time>
+    </trkpt>
+    <trkpt lat="19.3003326324208" lon="-158.60835442709">
+      <time>2026-02-07T12:31:47-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-07T12:45:52-0800_seg70_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-07T12:45:52-0800, effort segment 70, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="19.289" lon="-158.576333333333">
+      <time>2026-02-07T12:45:52-0800</time>
+    </trkpt>
+    <trkpt lat="19.2793333333371" lon="-158.543002751824">
+      <time>2026-02-07T13:00:15-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-09T11:43:38-0800_seg71_avgBft3</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-09T11:43:38-0800, effort segment 71, avg Beaufort SS 3</desc>
+  <trkseg>
+    <trkpt lat="19.5626666666667" lon="-156.081833333333">
+      <time>2026-02-09T11:43:38-0800</time>
+    </trkpt>
+    <trkpt lat="19.5544987550614" lon="-156.081500918662">
+      <time>2026-02-09T11:46:55-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-09T11:48:04-0800_seg72_avgBft3.5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-09T11:48:04-0800, effort segment 72, avg Beaufort SS 3.5</desc>
+  <trkseg>
+    <trkpt lat="19.5516666666667" lon="-156.081333333333">
+      <time>2026-02-09T11:48:04-0800</time>
+    </trkpt>
+    <trkpt lat="19.4523328825301" lon="-156.0835">
+      <time>2026-02-09T12:28:06-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-09T12:40:29-0800_seg73_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-09T12:40:29-0800, effort segment 73, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="19.4301666666667" lon="-156.076833333333">
+      <time>2026-02-09T12:40:29-0800</time>
+    </trkpt>
+    <trkpt lat="19.3913325708421" lon="-156.084166666667">
+      <time>2026-02-09T12:56:21-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-09T13:04:28-0800_seg74_avgBft3.21</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-09T13:04:28-0800, effort segment 74, avg Beaufort SS 3.21</desc>
+  <trkseg>
+    <trkpt lat="19.3711666666667" lon="-156.084666666667">
+      <time>2026-02-09T13:04:28-0800</time>
+    </trkpt>
+    <trkpt lat="19.1796666666667" lon="-156.088">
+      <time>2026-02-09T14:17:32-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-09T14:52:15-0800_seg75_avgBft2.39</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-09T14:52:15-0800, effort segment 75, avg Beaufort SS 2.39</desc>
+  <trkseg>
+    <trkpt lat="19.1648333333333" lon="-156.089166666667">
+      <time>2026-02-09T14:52:15-0800</time>
+    </trkpt>
+    <trkpt lat="19.0931662586883" lon="-156.089666666667">
+      <time>2026-02-09T15:19:14-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-09T15:51:44-0800_seg76_avgBft3</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-09T15:51:44-0800, effort segment 76, avg Beaufort SS 3</desc>
+  <trkseg>
+    <trkpt lat="19.1138333333333" lon="-156.133333333333">
+      <time>2026-02-09T15:51:44-0800</time>
+    </trkpt>
+    <trkpt lat="19.1176667479815" lon="-156.189820509004">
+      <time>2026-02-09T16:11:18-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-09T16:28:28-0800_seg77_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-09T16:28:28-0800, effort segment 77, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="19.1033333333333" lon="-156.235333333333">
+      <time>2026-02-09T16:28:28-0800</time>
+    </trkpt>
+    <trkpt lat="19.133833333335" lon="-156.47683150127">
+      <time>2026-02-09T17:55:53-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-09T17:58:19-0800_seg78_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-09T17:58:19-0800, effort segment 78, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="19.1346666666667" lon="-156.481666666667">
+      <time>2026-02-09T17:58:19-0800</time>
+    </trkpt>
+    <trkpt lat="19.1368333333337" lon="-156.495999085743">
+      <time>2026-02-09T18:03:48-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-10T08:44:50-0800_seg79_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-10T08:44:50-0800, effort segment 79, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="19.1498333333333" lon="-156.955166666667">
+      <time>2026-02-10T08:44:50-0800</time>
+    </trkpt>
+    <trkpt lat="19.0991663392442" lon="-156.963165751046">
+      <time>2026-02-10T09:04:52-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-10T09:21:05-0800_seg80_avgBft5.11</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-10T09:21:05-0800, effort segment 80, avg Beaufort SS 5.11</desc>
+  <trkseg>
+    <trkpt lat="19.1178333333333" lon="-156.973166666667">
+      <time>2026-02-10T09:21:05-0800</time>
+    </trkpt>
+    <trkpt lat="19.2746672936697" lon="-156.968333333333">
+      <time>2026-02-10T10:28:10-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-10T11:22:46-0800_seg81_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-10T11:22:46-0800, effort segment 81, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="19.3648333333333" lon="-156.967833333333">
+      <time>2026-02-10T11:22:46-0800</time>
+    </trkpt>
+    <trkpt lat="19.3763334106615" lon="-156.9675">
+      <time>2026-02-10T11:28:02-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-10T11:39:40-0800_seg82_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-10T11:39:40-0800, effort segment 82, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="19.3928333333333" lon="-156.9665">
+      <time>2026-02-10T11:39:40-0800</time>
+    </trkpt>
+    <trkpt lat="19.5003336302785" lon="-156.966166666667">
+      <time>2026-02-10T12:27:31-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-10T12:34:01-0800_seg83_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-10T12:34:01-0800, effort segment 83, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="19.5071666666667" lon="-156.955666666667">
+      <time>2026-02-10T12:34:01-0800</time>
+    </trkpt>
+    <trkpt lat="19.5086666666683" lon="-156.949168502392">
+      <time>2026-02-10T12:36:47-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-10T12:56:34-0800_seg84_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-10T12:56:34-0800, effort segment 84, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="19.5213333333333" lon="-156.908666666667">
+      <time>2026-02-10T12:56:34-0800</time>
+    </trkpt>
+    <trkpt lat="19.5221670360099" lon="-156.908666666667">
+      <time>2026-02-10T12:56:55-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-10T14:34:39-0800_seg85_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-10T14:34:39-0800, effort segment 85, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="19.7001666666667" lon="-156.933">
+      <time>2026-02-10T14:34:39-0800</time>
+    </trkpt>
+    <trkpt lat="19.4153328784316" lon="-157.404157488692">
+      <time>2026-02-10T18:09:34-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-11T13:28:57-0800_seg86_avgBft4.36</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-11T13:28:57-0800, effort segment 86, avg Beaufort SS 4.36</desc>
+  <trkseg>
+    <trkpt lat="20.6318333333333" lon="-157.362333333333">
+      <time>2026-02-11T13:28:57-0800</time>
+    </trkpt>
+    <trkpt lat="20.8380002937069" lon="-157.395666666667">
+      <time>2026-02-11T14:57:11-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-11T16:41:21-0800_seg87_avgBft4.41</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-11T16:41:21-0800, effort segment 87, avg Beaufort SS 4.41</desc>
+  <trkseg>
+    <trkpt lat="20.8425" lon="-157.636333333333">
+      <time>2026-02-11T16:41:21-0800</time>
+    </trkpt>
+    <trkpt lat="20.8098332344723" lon="-157.911319435253">
+      <time>2026-02-11T18:15:38-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-12T09:53:54-0800_seg88_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-12T09:53:54-0800, effort segment 88, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="21.2821666666667" lon="-158.331666666667">
+      <time>2026-02-12T09:53:54-0800</time>
+    </trkpt>
+    <trkpt lat="21.2483332506427" lon="-158.3176675956">
+      <time>2026-02-12T10:08:08-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-12T10:15:39-0800_seg89_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-12T10:15:39-0800, effort segment 89, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="21.2363333333333" lon="-158.313333333333">
+      <time>2026-02-12T10:15:39-0800</time>
+    </trkpt>
+    <trkpt lat="21.1573328210457" lon="-158.284834262103">
+      <time>2026-02-12T10:48:46-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-12T10:49:09-0800_seg90_avgBft5.88</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-12T10:49:09-0800, effort segment 90, avg Beaufort SS 5.88</desc>
+  <trkseg>
+    <trkpt lat="21.1563333333333" lon="-158.284833333333">
+      <time>2026-02-12T10:49:09-0800</time>
+    </trkpt>
+    <trkpt lat="20.8281659790486" lon="-158.28616574002">
+      <time>2026-02-12T12:55:50-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-12T14:37:18-0800_seg91_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-12T14:37:18-0800, effort segment 91, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="20.7858333333333" lon="-158.2895">
+      <time>2026-02-12T14:37:18-0800</time>
+    </trkpt>
+    <trkpt lat="20.2391655790544" lon="-158.289834256233">
+      <time>2026-02-12T18:15:11-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-13T08:21:34-0800_seg92_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-13T08:21:34-0800, effort segment 92, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="20.0726666666667" lon="-159.152333333333">
+      <time>2026-02-13T08:21:34-0800</time>
+    </trkpt>
+    <trkpt lat="19.905998999373" lon="-159.207672191578">
+      <time>2026-02-13T09:36:43-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-13T10:19:09-0800_seg93_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-13T10:19:09-0800, effort segment 93, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="19.8171666666667" lon="-159.177833333333">
+      <time>2026-02-13T10:19:09-0800</time>
+    </trkpt>
+    <trkpt lat="19.7726658359346" lon="-159.177167586636">
+      <time>2026-02-13T10:38:19-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-13T10:49:30-0800_seg94_avgBft5.67</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-13T10:49:30-0800, effort segment 94, avg Beaufort SS 5.67</desc>
+  <trkseg>
+    <trkpt lat="19.7473333333333" lon="-159.176833333333">
+      <time>2026-02-13T10:49:30-0800</time>
+    </trkpt>
+    <trkpt lat="19.4894992555299" lon="-159.1765">
+      <time>2026-02-13T12:38:09-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-13T13:00:02-0800_seg95_avgBft5.08</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-13T13:00:02-0800, effort segment 95, avg Beaufort SS 5.08</desc>
+  <trkseg>
+    <trkpt lat="19.4381666666667" lon="-159.177166666667">
+      <time>2026-02-13T13:00:02-0800</time>
+    </trkpt>
+    <trkpt lat="19.4131658324322" lon="-159.1765">
+      <time>2026-02-13T13:10:15-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-13T13:39:45-0800_seg96_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-13T13:39:45-0800, effort segment 96, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="19.3405" lon="-159.176333333333">
+      <time>2026-02-13T13:39:45-0800</time>
+    </trkpt>
+    <trkpt lat="19.177666185775" lon="-159.175333333333">
+      <time>2026-02-13T14:45:50-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-13T14:53:38-0800_seg97_avgBft5.79</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-13T14:53:38-0800, effort segment 97, avg Beaufort SS 5.79</desc>
+  <trkseg>
+    <trkpt lat="19.1773333333333" lon="-159.1915">
+      <time>2026-02-13T14:53:38-0800</time>
+    </trkpt>
+    <trkpt lat="19.46116801673" lon="-159.618660240028">
+      <time>2026-02-13T17:58:51-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-13T17:59:02-0800_seg98_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-13T17:59:02-0800, effort segment 98, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="19.4616666666667" lon="-159.618666666667">
+      <time>2026-02-13T17:59:02-0800</time>
+    </trkpt>
+    <trkpt lat="19.5211687362817" lon="-159.619166666667">
+      <time>2026-02-13T18:21:12-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-14T07:24:46-0800_seg99_avgBft4.67</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-14T07:24:46-0800, effort segment 99, avg Beaufort SS 4.67</desc>
+  <trkseg>
+    <trkpt lat="19.5603333333333" lon="-159.619166666667">
+      <time>2026-02-14T07:24:46-0800</time>
+    </trkpt>
+    <trkpt lat="19.7443340309837" lon="-159.619832413516">
+      <time>2026-02-14T08:39:47-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-14T09:15:48-0800_seg100_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-14T09:15:48-0800, effort segment 100, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="19.8106666666667" lon="-159.594166666667">
+      <time>2026-02-14T09:15:48-0800</time>
+    </trkpt>
+    <trkpt lat="19.8233334002119" lon="-159.600166666667">
+      <time>2026-02-14T09:20:55-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-14T10:09:17-0800_seg101_avgBft4.42</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-14T10:09:17-0800, effort segment 101, avg Beaufort SS 4.42</desc>
+  <trkseg>
+    <trkpt lat="19.8471666666667" lon="-159.596666666667">
+      <time>2026-02-14T10:09:17-0800</time>
+    </trkpt>
+    <trkpt lat="20.4946670001064" lon="-159.622669440247">
+      <time>2026-02-14T14:08:09-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-14T14:14:07-0800_seg102_avgBft5.82</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-14T14:14:07-0800, effort segment 102, avg Beaufort SS 5.82</desc>
+  <trkseg>
+    <trkpt lat="20.5101666666667" lon="-159.622833333333">
+      <time>2026-02-14T14:14:07-0800</time>
+    </trkpt>
+    <trkpt lat="20.6423333868563" lon="-159.622666666667">
+      <time>2026-02-14T15:04:53-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-14T15:30:38-0800_seg103_avgBft5.61</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-14T15:30:38-0800, effort segment 103, avg Beaufort SS 5.61</desc>
+  <trkseg>
+    <trkpt lat="20.6566666666667" lon="-159.626333333333">
+      <time>2026-02-14T15:30:38-0800</time>
+    </trkpt>
+    <trkpt lat="21.0505008067929" lon="-159.623666666667">
+      <time>2026-02-14T18:08:00-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-15T07:30:33-0800_seg104_avgBft5.52</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-15T07:30:33-0800, effort segment 104, avg Beaufort SS 5.52</desc>
+  <trkseg>
+    <trkpt lat="21.6196666666667" lon="-160.076666666667">
+      <time>2026-02-15T07:30:33-0800</time>
+    </trkpt>
+    <trkpt lat="21.7851668779311" lon="-160.076669465512">
+      <time>2026-02-15T08:32:50-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-15T08:36:20-0800_seg105_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-15T08:36:20-0800, effort segment 105, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="21.7913333333333" lon="-160.070833333333">
+      <time>2026-02-15T08:36:20-0800</time>
+    </trkpt>
+    <trkpt lat="21.8466673043021" lon="-160.021685333639">
+      <time>2026-02-15T09:05:21-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-15T09:34:13-0800_seg106_avgBft4.57</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-15T09:34:13-0800, effort segment 106, avg Beaufort SS 4.57</desc>
+  <trkseg>
+    <trkpt lat="21.9078333333333" lon="-159.9965">
+      <time>2026-02-15T09:34:13-0800</time>
+    </trkpt>
+    <trkpt lat="21.9450002966933" lon="-160.00233239933">
+      <time>2026-02-15T09:48:49-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-15T10:12:41-0800_seg107_avgBft2</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-15T10:12:41-0800, effort segment 107, avg Beaufort SS 2</desc>
+  <trkseg>
+    <trkpt lat="21.9851666666667" lon="-160.0025">
+      <time>2026-02-15T10:12:41-0800</time>
+    </trkpt>
+    <trkpt lat="21.991500468811" lon="-160.002832399022">
+      <time>2026-02-15T10:15:08-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-15T10:33:53-0800_seg108_avgBft2.28</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-15T10:33:53-0800, effort segment 108, avg Beaufort SS 2.28</desc>
+  <trkseg>
+    <trkpt lat="22.0001666666667" lon="-160.003833333333">
+      <time>2026-02-15T10:33:53-0800</time>
+    </trkpt>
+    <trkpt lat="22.0391670425856" lon="-160.003666666667">
+      <time>2026-02-15T10:49:23-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-15T11:01:11-0800_seg109_avgBft3</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-15T11:01:11-0800, effort segment 109, avg Beaufort SS 3</desc>
+  <trkseg>
+    <trkpt lat="22.0558333333333" lon="-160.021166666667">
+      <time>2026-02-15T11:01:11-0800</time>
+    </trkpt>
+    <trkpt lat="22.0748333092555" lon="-160.073979432549">
+      <time>2026-02-15T11:24:50-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-15T11:27:31-0800_seg110_avgBft3</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-15T11:27:31-0800, effort segment 110, avg Beaufort SS 3</desc>
+  <trkseg>
+    <trkpt lat="22.079" lon="-160.077833333333">
+      <time>2026-02-15T11:27:31-0800</time>
+    </trkpt>
+    <trkpt lat="22.1236666666667" lon="-160.080166666667">
+      <time>2026-02-15T11:45:26-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-15T11:56:58-0800_seg111_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-15T11:56:58-0800, effort segment 111, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="22.1436666666667" lon="-160.083166666667">
+      <time>2026-02-15T11:56:58-0800</time>
+    </trkpt>
+    <trkpt lat="22.1383333103221" lon="-160.194660119629">
+      <time>2026-02-15T12:40:07-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-15T12:45:18-0800_seg112_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-15T12:45:18-0800, effort segment 112, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="22.1371666666667" lon="-160.208166666667">
+      <time>2026-02-15T12:45:18-0800</time>
+    </trkpt>
+    <trkpt lat="22.1356665977491" lon="-160.222977552923">
+      <time>2026-02-15T12:50:54-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-15T13:45:26-0800_seg113_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-15T13:45:26-0800, effort segment 113, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="22.1113333333333" lon="-160.243666666667">
+      <time>2026-02-15T13:45:26-0800</time>
+    </trkpt>
+    <trkpt lat="22.122166573442" lon="-160.521150768255">
+      <time>2026-02-15T15:27:00-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-15T15:50:32-0800_seg114_avgBft5.15</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-15T15:50:32-0800, effort segment 114, avg Beaufort SS 5.15</desc>
+  <trkseg>
+    <trkpt lat="22.0856666666667" lon="-160.5405">
+      <time>2026-02-15T15:50:32-0800</time>
+    </trkpt>
+    <trkpt lat="21.9796665879203" lon="-160.65666012709">
+      <time>2026-02-15T16:55:53-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-15T17:10:28-0800_seg115_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-15T17:10:28-0800, effort segment 115, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="21.9648333333333" lon="-160.685333333333">
+      <time>2026-02-15T17:10:28-0800</time>
+    </trkpt>
+    <trkpt lat="21.9619999203416" lon="-160.690661061691">
+      <time>2026-02-15T17:12:50-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-16T12:35:38-0800_seg116_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-16T12:35:38-0800, effort segment 116, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="22.1088333333333" lon="-159.936666666667">
+      <time>2026-02-16T12:35:38-0800</time>
+    </trkpt>
+    <trkpt lat="22.0924998565738" lon="-159.956661056458">
+      <time>2026-02-16T12:45:34-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-16T15:02:53-0800_seg117_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-16T15:02:53-0800, effort segment 117, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="22.0371666666667" lon="-159.943666666667">
+      <time>2026-02-16T15:02:53-0800</time>
+    </trkpt>
+    <trkpt lat="22.0364999750385" lon="-159.913848287418">
+      <time>2026-02-16T15:13:11-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-16T15:57:13-0800_seg118_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-16T15:57:13-0800, effort segment 118, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="22.0315" lon="-159.867166666667">
+      <time>2026-02-16T15:57:13-0800</time>
+    </trkpt>
+    <trkpt lat="22.0049991782351" lon="-159.859499065591">
+      <time>2026-02-16T16:12:15-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-18T07:17:05-0800_seg119_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-18T07:17:05-0800, effort segment 119, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="21.5618333333333" lon="-158.384666666667">
+      <time>2026-02-18T07:17:05-0800</time>
+    </trkpt>
+    <trkpt lat="21.5626667360804" lon="-158.389319361562">
+      <time>2026-02-18T07:18:45-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-18T08:17:22-0800_seg120_avgBft5.73</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-18T08:17:22-0800, effort segment 120, avg Beaufort SS 5.73</desc>
+  <trkseg>
+    <trkpt lat="21.5691666666667" lon="-158.410666666667">
+      <time>2026-02-18T08:17:22-0800</time>
+    </trkpt>
+    <trkpt lat="21.4283333335985" lon="-158.248355666888">
+      <time>2026-02-18T11:33:07-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-18T12:32:15-0800_seg121_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-18T12:32:15-0800, effort segment 121, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="21.3913333333333" lon="-158.22">
+      <time>2026-02-18T12:32:15-0800</time>
+    </trkpt>
+    <trkpt lat="21.3783327207746" lon="-158.208177829586">
+      <time>2026-02-18T12:39:06-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-18T12:52:20-0800_seg122_avgBft5.87</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-18T12:52:20-0800, effort segment 122, avg Beaufort SS 5.87</desc>
+  <trkseg>
+    <trkpt lat="21.3646666666667" lon="-158.199333333333">
+      <time>2026-02-18T12:52:20-0800</time>
+    </trkpt>
+    <trkpt lat="21.4213334831188" lon="-158.513333333333">
+      <time>2026-02-18T16:26:10-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-19T07:29:18-0800_seg123_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-19T07:29:18-0800, effort segment 123, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="20.6755" lon="-158.057833333333">
+      <time>2026-02-19T07:29:18-0800</time>
+    </trkpt>
+    <trkpt lat="20.6749999479036" lon="-158.053172220598">
+      <time>2026-02-19T07:31:18-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-19T07:38:00-0800_seg124_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-19T07:38:00-0800, effort segment 124, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="20.6733333333333" lon="-158.036">
+      <time>2026-02-19T07:38:00-0800</time>
+    </trkpt>
+    <trkpt lat="20.6731666666667" lon="-158.034">
+      <time>2026-02-19T07:38:48-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-19T08:45:09-0800_seg125_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-19T08:45:09-0800, effort segment 125, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="20.666" lon="-157.876833333333">
+      <time>2026-02-19T08:45:09-0800</time>
+    </trkpt>
+    <trkpt lat="20.6694999479365" lon="-157.829182402657">
+      <time>2026-02-19T09:02:48-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-19T09:26:25-0800_seg126_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-19T09:26:25-0800, effort segment 126, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="20.6633333333333" lon="-157.820333333333">
+      <time>2026-02-19T09:26:25-0800</time>
+    </trkpt>
+    <trkpt lat="20.6661668237063" lon="-157.790187955919">
+      <time>2026-02-19T09:38:21-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-19T09:40:02-0800_seg127_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-19T09:40:02-0800, effort segment 127, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="20.6663333333333" lon="-157.786333333333">
+      <time>2026-02-19T09:40:02-0800</time>
+    </trkpt>
+    <trkpt lat="20.6676667190417" lon="-157.766349994751">
+      <time>2026-02-19T09:48:00-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-19T10:14:04-0800_seg128_avgBft4.07</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-19T10:14:04-0800, effort segment 128, avg Beaufort SS 4.07</desc>
+  <trkseg>
+    <trkpt lat="20.6648333333333" lon="-157.704666666667">
+      <time>2026-02-19T10:14:04-0800</time>
+    </trkpt>
+    <trkpt lat="20.6626666666738" lon="-157.651170368618">
+      <time>2026-02-19T10:34:48-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-19T11:18:36-0800_seg129_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-19T11:18:36-0800, effort segment 129, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="20.665" lon="-157.632666666667">
+      <time>2026-02-19T11:18:36-0800</time>
+    </trkpt>
+    <trkpt lat="20.6638333333404" lon="-157.617337036434">
+      <time>2026-02-19T11:25:07-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-19T11:49:44-0800_seg130_avgBft6</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-19T11:49:44-0800, effort segment 130, avg Beaufort SS 6</desc>
+  <trkseg>
+    <trkpt lat="20.6578333333333" lon="-157.557333333333">
+      <time>2026-02-19T11:49:44-0800</time>
+    </trkpt>
+    <trkpt lat="20.6568333333551" lon="-157.53600647896">
+      <time>2026-02-19T11:58:22-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-19T12:21:05-0800_seg131_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-19T12:21:05-0800, effort segment 131, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="20.6558333333333" lon="-157.481333333333">
+      <time>2026-02-19T12:21:05-0800</time>
+    </trkpt>
+    <trkpt lat="20.6558333333404" lon="-157.479670369072">
+      <time>2026-02-19T12:21:47-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-19T12:26:34-0800_seg132_avgBft3.68</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-19T12:26:34-0800, effort segment 132, avg Beaufort SS 3.68</desc>
+  <trkseg>
+    <trkpt lat="20.6563333333333" lon="-157.468166666667">
+      <time>2026-02-19T12:26:34-0800</time>
+    </trkpt>
+    <trkpt lat="20.6841667191595" lon="-157.114001850329">
+      <time>2026-02-19T14:30:57-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-19T14:44:59-0800_seg133_avgBft2.98</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-19T14:44:59-0800, effort segment 133, avg Beaufort SS 2.98</desc>
+  <trkseg>
+    <trkpt lat="20.6861666666667" lon="-157.082833333333">
+      <time>2026-02-19T14:44:59-0800</time>
+    </trkpt>
+    <trkpt lat="20.8775004819471" lon="-157.125826844571">
+      <time>2026-02-19T16:24:40-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-20T07:26:44-0800_seg134_avgBft5</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-20T07:26:44-0800, effort segment 134, avg Beaufort SS 5</desc>
+  <trkseg>
+    <trkpt lat="20.663" lon="-156.725166666667">
+      <time>2026-02-20T07:26:44-0800</time>
+    </trkpt>
+    <trkpt lat="20.6590000000018" lon="-156.837831483099">
+      <time>2026-02-20T08:09:42-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-20T08:23:42-0800_seg135_avgBft4.71</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-20T08:23:42-0800, effort segment 135, avg Beaufort SS 4.71</desc>
+  <trkseg>
+    <trkpt lat="20.6611666666667" lon="-156.8615">
+      <time>2026-02-20T08:23:42-0800</time>
+    </trkpt>
+    <trkpt lat="20.7921674144757" lon="-157.130652770243">
+      <time>2026-02-20T10:24:01-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-20T12:52:24-0800_seg136_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-20T12:52:24-0800, effort segment 136, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="20.7456666666667" lon="-157.187833333333">
+      <time>2026-02-20T12:52:24-0800</time>
+    </trkpt>
+    <trkpt lat="20.762833434193" lon="-157.231324071052">
+      <time>2026-02-20T13:11:12-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-20T15:21:09-0800_seg137_avgBft4</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-20T15:21:09-0800, effort segment 137, avg Beaufort SS 4</desc>
+  <trkseg>
+    <trkpt lat="20.7631666666667" lon="-157.2385">
+      <time>2026-02-20T15:21:09-0800</time>
+    </trkpt>
+    <trkpt lat="20.7913334334561" lon="-157.661137947662">
+      <time>2026-02-20T18:10:20-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-21T07:22:14-0800_seg138_avgBft3.27</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-21T07:22:14-0800, effort segment 138, avg Beaufort SS 3.27</desc>
+  <trkseg>
+    <trkpt lat="20.1446666666667" lon="-158.733333333333">
+      <time>2026-02-21T07:22:14-0800</time>
+    </trkpt>
+    <trkpt lat="20.4318340715268" lon="-158.731833333333">
+      <time>2026-02-21T09:11:44-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+<trk>
+  <name>2601_2026-02-21T10:40:25-0800_seg139_avgBft4.17</name>
+  <desc>Vessel track for Cruise 2601, 2026-02-21T10:40:25-0800, effort segment 139, avg Beaufort SS 4.17</desc>
+  <trkseg>
+    <trkpt lat="20.4493333333333" lon="-158.734166666667">
+      <time>2026-02-21T10:40:25-0800</time>
+    </trkpt>
+    <trkpt lat="21.6121675429424" lon="-158.731167598447">
+      <time>2026-02-21T18:00:03-0800</time>
+    </trkpt>
+  </trkseg>
+</trk>
+</gpx>
