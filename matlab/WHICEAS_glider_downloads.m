@@ -38,11 +38,11 @@ missionPaths = {
 
 % names of configuration files (this might differ across computers)
 configFiles = {
-fullfile(missionPaths{1}, 'agate_config_sg274_20260128_WHICEAS.cnf');
-fullfile(missionPaths{2}, 'agate_config_sg607_20260128_WHICEAS.cnf');
-fullfile(missionPaths{3}, 'agate_config_sg639_20260211_WHICEAS.cnf');
-fullfile(missionPaths{4}, 'agate_config_sg679_20260205_WHICEAS.cnf')
-};
+    fullfile(missionPaths{1}, 'agate_config_sg274_20260128_WHICEAS.cnf');
+    fullfile(missionPaths{2}, 'agate_config_sg607_20260128_WHICEAS.cnf');
+    fullfile(missionPaths{3}, 'agate_config_sg639_20260211_WHICEAS.cnf');
+    fullfile(missionPaths{4}, 'agate_config_sg679_20260205_WHICEAS.cnf')
+    };
 
 %% Run each glider
 % this can be a little slow because of SSH and downloads
@@ -61,13 +61,14 @@ ppStruct.sg679 = workflow_downloadScript_sg679_20260205_WHICEAS(configFiles{4}, 
 % define targets - with midpoints for calculations
 targetsMidpointsFiles = { ...
     % 'targets_WHICEAS_SG274_1200km_WN_20260209_withMidpoints';
-    'targets_WHICEAS_SG274_1050km_WN_20260225_withMidpoints'; 
-    % 'targets_WHICEAS_SG607_950km_LN_20260209_withMidpoints'; 
-    'targets_WHICEAS_SG607_1050km_LN_20260224_withMidpoints'; 
+    'targets_WHICEAS_SG274_1050km_WN_20260225_withMidpoints';
+    % 'targets_WHICEAS_SG607_950km_LN_20260209_withMidpoints';
+    'targets_WHICEAS_SG607_1050km_LN_20260224_withMidpoints';
     % 'targets_WHICEAS_sg639_1200km_LS_20260211_withMidpoints';
-    % 'targets_WHICEAS_sg639_1200km_LS_20260224_withMidpoints'; 
+    % 'targets_WHICEAS_sg639_1200km_LS_20260224_withMidpoints';
     'targets_WHICEAS_sg639_1200km_LS_20260228_withMidpoints';
-    'targets_WHICEAS_sg679_1200km_WS_20260211_withMidpoints'};
+    % 'targets_WHICEAS_sg679_1200km_WS_20260211_withMidpoints'};
+    'targets_WHICEAS_sg679_1080km_WS_20260309_withMidpoints'};
 
 % define dive limits (to exclude rodeo)
 diveLimits = [92; 66; 1; 1];
@@ -79,9 +80,9 @@ diveLimits = [92; 66; 1; 1];
 
 % planned recovery dates
 plannedRecov = datetime({ ...
-    '2026-04-09 9:00'; 
-    '2026-04-08 9:00'; 
-    '2026-04-14 9:00'; 
+    '2026-04-09 9:00';
+    '2026-04-08 9:00';
+    '2026-04-14 9:00';
     '2026-04-14 9:00'
     });
 plannedRecov.TimeZone = 'Pacific/Honolulu';
@@ -120,7 +121,8 @@ targetsFiles = {
     % 'targets_WHICEAS_sg639_1200km_LS_20260211;
     % 'targets_WHICEAS_sg639_1200km_LS_20260224';
     'targets_WHICEAS_sg639_1200km_LS_20260228';
-    'targets_WHICEAS_sg679_1200km_WS_20260211'};
+    % 'targets_WHICEAS_sg679_1200km_WS_20260211'};
+'targets_WHICEAS_sg679_1080km_WS_20260309'};
 
 % build basemap - use most recent config for bathy
 % use 274's cofnig to start
