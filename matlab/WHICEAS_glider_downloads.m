@@ -101,6 +101,14 @@ exportgraphics(gca, fullfile('A:\My Drive\Glider Projects\2026 WHICEAS Gliders',
 exportgraphics(gca, fullfile(path_repo, 'outputs', ...
     'recovery_planner.png'), 'Resolution', 600);
 
+% add some detail to individual maps
+for g = 1:numel(gliders)
+    figNum = str2double(gliders{g}(3:end));
+    figure(figNum);
+    subtitle(sprintf('%.0f km completed. %.0f km to go.', ...
+        tm.distCov_km(g), tm.distRem_km(g)));
+end
+
 %% create combined map
 
 % set colors
@@ -122,7 +130,7 @@ targetsFiles = {
     % 'targets_WHICEAS_sg639_1200km_LS_20260224';
     'targets_WHICEAS_sg639_1200km_LS_20260228';
     % 'targets_WHICEAS_sg679_1200km_WS_20260211'};
-'targets_WHICEAS_sg679_1080km_WS_20260309'};
+    'targets_WHICEAS_sg679_1080km_WS_20260309'};
 
 % build basemap - use most recent config for bathy
 % use 274's cofnig to start
