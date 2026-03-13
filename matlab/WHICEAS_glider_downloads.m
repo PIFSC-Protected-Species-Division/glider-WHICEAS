@@ -117,7 +117,7 @@ col_sg = [...
     1.0 1.0 0.0; ...    % yellow
     0.8 0.0 0.2; ...    % red
     0.8 0.2 0.6];       % purple
-col_slcm  = [109 192  53]/255; % green
+col_slcm  = [0.2 0.6 0.2]; % green
 col_tgt = [0 0 0]; % black
 
 % define targets - simple for mapping
@@ -162,8 +162,15 @@ for g = 1:numel(gliders)
     % text(targets.lon-0.1, targets.lat+0.1, targets.name, 'FontSize', 6)
     % plot track
     h(g) = plotm(ppTmp.startLatitude, ppTmp.startLongitude, ...
-        'Color', col_sg(g,:),'LineWidth', 3, 'DisplayName', gliders{g});
+        'Color', col_sg(g,:), 'LineWidth', 3, 'DisplayName', gliders{g});
 end
+
+% add slocum
+sl = readtable(fullfile(path_repo, 'data', 'stenella_rodeo_2026_surfacings.csv'));
+sl.lat_decdeg = ddmm2decdeg(sl.lat);
+sl.lon_decdeg = ddmm2decdeg(sl.lon);
+h(5) = plotm(sl.lat_decdeg, sl.lon_decdeg, 'Color', col_slcm, ...
+    'LineWidth', 3, 'DisplayName', 'slocum');
 
 addScaleBar('Length', 200, 'Major', 100, 'Minor', 20, ...
     'AnchorLat', 17.3, 'AnchorLon', -155.3)
