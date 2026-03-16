@@ -68,7 +68,7 @@ targetsMidpointsFiles = { ...
     % 'targets_WHICEAS_sg639_1200km_LS_20260224_withMidpoints';
     'targets_WHICEAS_sg639_1200km_LS_20260228_withMidpoints';
     % 'targets_WHICEAS_sg679_1200km_WS_20260211_withMidpoints'};
-    'targets_WHICEAS_sg679_1080km_WS_20260309_withMidpoints'};
+    'targets_WHICEAS_sg679_1120km_WS_20260309_withMidpoints'};
 
 % define dive limits (to exclude rodeo)
 diveLimits = [92; 66; 1; 1];
@@ -130,7 +130,7 @@ targetsFiles = {
     % 'targets_WHICEAS_sg639_1200km_LS_20260224';
     'targets_WHICEAS_sg639_1200km_LS_20260228';
     % 'targets_WHICEAS_sg679_1200km_WS_20260211'};
-    'targets_WHICEAS_sg679_1080km_WS_20260309'};
+    'targets_WHICEAS_sg679_1120km_WS_20260309'};
 
 % build basemap - use most recent config for bathy
 % use 274's cofnig to start
