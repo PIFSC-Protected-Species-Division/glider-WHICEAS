@@ -161,11 +161,7 @@ text(xLeft + days(0.5), y - 0.25, ...
     'HorizontalAlignment','left', ...
     'VerticalAlignment','top', ...
     'FontSize',9)
-
-
-
 end
-
 
 % ---- Today line ----
 xline(nowT,'k--','Today')
@@ -189,5 +185,120 @@ legend([hFull hRec], ...
     'Orientation','horizontal')
 
 hold off;
+
+
+
+plotTrkSpdOverTime(ppStruct, gliders, diveLimits, 1)
 end
 
+%% nested function
+function plotTrkSpdOverTime(ppStruct, gliders, diveLimits, nWin)
+% PLOTTRKSPDOVERTIME  Plot rolling avg trackline speed per glider over dive number
+%
+%   Syntax:
+%       PLOTTRKSPDOVERTIME(ppStruct, gliders, diveLimits, nWin)
+%
+%   Description:
+%       For each glider, computes a rolling n-dive average trackline speed
+%       (km/day) using dog_km and dive durations, then plots each glider
+%       as a separate subplot over dive number. Mirrors the avgSpdRec
+%       approach in createTravelMetrics_WHICEAS.
+%
+%   Inputs:
+%       ppStruct    [struct]     piloting parameters structure
+%       gliders     [cell array] glider names as strings
+%       diveLimits  [numeric]    dive number to start calculations at
+%       nWin        [numeric]    number of dives to average over (use 1
+%                                for single-dive, no averaging)
+%
+%   Authors:
+%       S. Fregosi <selene.fregosi@gmail.com>
+%
+%   Updated: 29 March 2026
+
+% default to single-dive if not specified
+if nargin < 4 || isempty(nWin)
+    nWin = 1;
+end
+
+col_sg = [...
+    1.0 0.4 0.0; ...    % orange
+    1.0 1.0 0.0; ...    % yellow
+    0.8 0.0 0.2; ...    % red
+    0.8 0.2 0.6];       % purple
+
+nG = numel(gliders);
+
+figure(2028);
+clf;
+set(gcf, 'Position', [1380 70 640 180*nG]);
+
+% % fleet mean for reference line - compute once before subplot loop
+% allMeans = arrayfun(@(g) ...
+%     sum(ppStruct.(gliders{g}).dog_km(diveLimits(g):end), 'omitnan') / ...
+%     days(ppStruct.(gliders{g}).diveEndTime(end) - ...
+%          ppStruct.(gliders{g}).diveStartTime(diveLimits(g))), ...
+%     1:nG);
+% fleetMean = mean(allMeans, 'omitnan');
+
+for g = 1:nG
+    ppTmp = ppStruct.(gliders{g});
+
+    startIdx = diveLimits(g);
+    nDives   = height(ppTmp);
+
+    subplot(nG, 1, g);
+    hold on;
+
+    if nDives < startIdx
+        warning('Glider %s has fewer dives than diveLimits(%d). Skipping.', ...
+            gliders{g}, g);
+        continue
+    end
+
+    nValid     = nDives - startIdx + 1;
+    diveNums   = (startIdx:nDives)';
+    rollingSpd = NaN(nValid, 1);
+
+    for d = startIdx:nDives
+        idx      = d - startIdx + 1;
+        winStart = max(startIdx, d - (nWin - 1));
+
+        winDog_km  = sum(ppTmp.dog_km(winStart:d), 'omitnan');
+        winElapsed = days(ppTmp.diveEndTime(d) - ppTmp.diveStartTime(winStart));
+
+        if winElapsed > 0
+            rollingSpd(idx) = winDog_km / winElapsed;
+        end
+    end
+
+    % per-glider mission mean
+    gliderMean = sum(ppTmp.dog_km(startIdx:end), 'omitnan') / ...
+        days(ppTmp.diveEndTime(end) - ppTmp.diveStartTime(startIdx));
+
+    plot(diveNums, rollingSpd, '-o', ...
+        'Color',           col_sg(g,:), ...
+        'MarkerFaceColor', col_sg(g,:), ...
+        'MarkerSize',      4);
+
+    % yline(fleetMean, 'k--', 'Fleet Mean', ...
+    %     'LabelHorizontalAlignment', 'left');
+        yline(gliderMean, '--', sprintf('Mission Mean: %.1f km/day', gliderMean), ...
+        'Color',                    'black', ...
+        'LabelHorizontalAlignment', 'left', 'HandleVisibility','off');
+
+    ylabel('km/day');
+    title(gliders{g});
+    grid on;
+    hold off;
+end
+
+xlabel('Dive Number');
+
+if nWin == 1
+    sgtitle('WHICEAS 2026 — Per-Dive Trackline Speed');
+else
+    sgtitle(sprintf('WHICEAS 2026 — Rolling %d-Dive Avg Trackline Speed', nWin));
+end
+
+end
