@@ -63,7 +63,8 @@ targetsMidpointsFiles = { ...
     % 'targets_WHICEAS_SG274_1200km_WN_20260209_withMidpoints';
     'targets_WHICEAS_SG274_1050km_WN_20260225_withMidpoints';
     % 'targets_WHICEAS_SG607_950km_LN_20260209_withMidpoints';
-    'targets_WHICEAS_SG607_1050km_LN_20260224_withMidpoints';
+    % 'targets_WHICEAS_SG607_1050km_LN_20260224_withMidpoints';
+    'targets_WHICEAS_SG607_1050km_LN_20260401_withMidpoints';
     % 'targets_WHICEAS_sg639_1200km_LS_20260211_withMidpoints';
     % 'targets_WHICEAS_sg639_1200km_LS_20260224_withMidpoints';
     'targets_WHICEAS_sg639_1200km_LS_20260228_withMidpoints';
@@ -81,7 +82,7 @@ diveLimits = [92; 66; 1; 1];
 % planned recovery dates
 plannedRecov = datetime({ ...
     '2026-04-09 9:00';
-    '2026-04-08 9:00';
+    '2026-04-06 9:00';
     '2026-04-14 9:00';
     '2026-04-14 9:00'
     });
@@ -125,7 +126,8 @@ targetsFiles = {
     % 'targets_WHICEAS_SG274_1200km_WN_20260209';
     'targets_WHICEAS_SG274_1050km_WN_20260225';
     % 'targets_WHICEAS_SG607_950km_LN_20260209';
-    'targets_WHICEAS_SG607_1050km_LN_20260224';
+    % 'targets_WHICEAS_SG607_1050km_LN_20260224';
+    'targets_WHICEAS_SG607_1050km_LN_20260401';
     % 'targets_WHICEAS_sg639_1200km_LS_20260211;
     % 'targets_WHICEAS_sg639_1200km_LS_20260224';
     'targets_WHICEAS_sg639_1200km_LS_20260228';
