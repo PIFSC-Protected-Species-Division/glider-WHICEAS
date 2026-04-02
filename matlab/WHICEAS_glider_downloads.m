@@ -67,7 +67,8 @@ targetsMidpointsFiles = { ...
     'targets_WHICEAS_SG607_1050km_LN_20260401_withMidpoints';
     % 'targets_WHICEAS_sg639_1200km_LS_20260211_withMidpoints';
     % 'targets_WHICEAS_sg639_1200km_LS_20260224_withMidpoints';
-    'targets_WHICEAS_sg639_1200km_LS_20260228_withMidpoints';
+    % 'targets_WHICEAS_sg639_1200km_LS_20260228_withMidpoints';
+        'targets_WHICEAS_sg639_1260km_LS_20260402_withMidpoints';
     % 'targets_WHICEAS_sg679_1200km_WS_20260211_withMidpoints'};
     'targets_WHICEAS_sg679_1120km_WS_20260309_withMidpoints'};
 
@@ -130,7 +131,8 @@ targetsFiles = {
     'targets_WHICEAS_SG607_1050km_LN_20260401';
     % 'targets_WHICEAS_sg639_1200km_LS_20260211;
     % 'targets_WHICEAS_sg639_1200km_LS_20260224';
-    'targets_WHICEAS_sg639_1200km_LS_20260228';
+    % 'targets_WHICEAS_sg639_1200km_LS_20260228';
+    'targets_WHICEAS_sg639_1260km_LS_20260402';
     % 'targets_WHICEAS_sg679_1200km_WS_20260211'};
     'targets_WHICEAS_sg679_1120km_WS_20260309'};
 
