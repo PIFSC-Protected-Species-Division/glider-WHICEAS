@@ -135,12 +135,14 @@ writetable(interpTrack, fullfile(CONFIG.path.mission, ...
 % targets_rodeo_hourglass_v20260128
 % WHICEAS_sg639_1200km_LS_20260211.kml -> targets_WHICEAS_sg639_1200km_LS_20260211
 % WHICEAS_sg639_1200km_LS_20260224.kml -> targets_WHICEAS_sg639_1200km_LS_20260224
-
+% manually (in notepad++) combined 20260211 with 20260224 to make a 
+% 20260228 version that improved mapping/display of the 0224 changes.
+% WHICEAS_sg639_1200km_LS_20260224.kml -> targets_WHICEAS_sg639_1260km_LS_20260402
 % saved single track as kml (saved to desktop mission folder)
 CONFIG = agate(fullfile('C:\Users\selene.fregosi\Desktop\', 'sg639_20260211_WHICEAS', ...
     'agate_config_sg639_20260211_WHICEAS.cnf'));
 
-kmlFile = fullfile(CONFIG.path.mission, 'WHICEAS_sg639_1200km_LS_20260224.kml');
+kmlFile = fullfile(CONFIG.path.mission, 'WHICEAS_sg639_1260km_LS_20260402.kml');
 % first make targets file without spacing
 targetsOut = makeTargetsFile(CONFIG, kmlFile, 'method', 'LS', ...
     'radius', 2000);
@@ -150,7 +152,7 @@ targetsOut = makeTargetsFile(CONFIG, kmlFile, 'method', 'LS', ...
 % now make with 20 km spacing
 targetsOut = makeTargetsFile(CONFIG, kmlFile, 'method', 'LS', ...
     'radius', 2000, 'spacing', 20);
-% this has 61 waypoints total but main is 11 points + RECV
+% this has 63 waypoints total but main is 13 points + RECV
 % so plot to see turn points
 mapPlannedTrack(CONFIG, targetsOut);
 % Used map to create names text file with LS01, LS1a, LS1b, LS02, LS2a,
@@ -160,18 +162,18 @@ mapPlannedTrack(CONFIG, targetsOut);
 targetsOut = makeTargetsFile(CONFIG, kmlFile, 'method', 'file', ...
     'radius', 2000, 'spacing', 20, ...
     'wpFile', fullfile(CONFIG.path.mission, ...
-    'targets_WHICEAS_sg639_1200km_LS_20260224_withMidpoints_names.txt'));
+    'targets_WHICEAS_sg639_1260km_LS_20260402_withMidpoints_names.txt'));
 
 % renamed this to add _withMidpoints to the name
 % plot again for a final check
 mapPlannedTrack(CONFIG, fullfile(CONFIG.path.mission, ...
-    'targets_WHICEAS_sg639_1200km_LS_20260224_withMidpoints'));
+    'targets_WHICEAS_sg639_1260km_LS_20260402_withMidpoints'));
 
 % plot bathymap
 plotTrackBathyProfile(CONFIG, 'targetsFile', fullfile(CONFIG.path.mission, ...
-    'targets_WHICEAS_sg639_1200km_LS_20260224'));
+    'targets_WHICEAS_sg639_1260km_LS_20260402'));
 exportgraphics(gca, fullfile(CONFIG.path.mission, ...
-    'targets_WHICEAS_sg639_1200km_LS_20260224_bathyProfile.png'), ...
+    'targets_WHICEAS_sg639_1260km_LS_20260402_bathyProfile.png'), ...
     'Resolution', 600);
 
 % create table for the Navy
