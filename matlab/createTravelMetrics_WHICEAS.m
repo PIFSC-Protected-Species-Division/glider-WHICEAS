@@ -40,7 +40,7 @@ for g = 1:numel(gliders)
     ppTmp = ppStruct.(gliders{g});
     tm.glider(g) = gliders(g);
     tm.deploy(g) = datetime(ppTmp.diveStartTime(diveLimits(g)), ...
-        'TimeZone','Pacific/Honolulu');
+        'Format', 'uuuu-MMM-dd HH:mm ZZZZ', 'TimeZone','UTC');
     % elapsed days and total distance over groun
     tm.missionElapsed(g) = days(ppTmp.diveEndTime(end) - ppTmp.diveStartTime(diveLimits(g)));
     tm.distTot_km(g) = sum(ppTmp.dog_km(diveLimits(g):end), 'omitnan');
@@ -48,6 +48,9 @@ for g = 1:numel(gliders)
     % estimate track distance covered and remaining
     % loop through all targets (expect RECV) to get distances between each
     [targets, ~] = readTargetsFile(fullfile(missionPaths{g}, targetsFiles{g}));
+    % strip any empty rows
+    targets(isnan(targets.lat),:) = [];
+    % calc distances between targets
     for f = 1:height(targets) - 1
         [targets.distToNext_km(f), ~] = lldistkm([targets.lat(f+1) targets.lon(f+1)], ...
             [targets.lat(f) targets.lon(f)]);
@@ -82,9 +85,13 @@ for g = 1:numel(gliders)
 
     % eta to recovery
     tm.eta(g) = dateshift(datetime(ppTmp.diveEndTime(end), 'Format', 'uuuu-MMM-dd HH:mm ZZZZ', ...
-        'TimeZone', 'Pacific/Honolulu') + days(tm.missionRem(g)), 'start', 'hour', 'nearest');
+        'TimeZone', 'UTC') + days(tm.missionRem(g)), 'start', 'hour', 'nearest');
     tm.etaRec(g) = dateshift(datetime(ppTmp.diveEndTime(end), 'Format', 'uuuu-MMM-dd HH:mm ZZZZ', ...
-        'TimeZone', 'Pacific/Honolulu') + days(tm.missionRemRec(g)), 'start', 'hour', 'nearest');
+        'TimeZone', 'UTC') + days(tm.missionRemRec(g)), 'start', 'hour', 'nearest');
+    
+    % update timezone to HST
+    tm.eta.TimeZone = 'Pacific/Honolulu';
+    tm.etaRec.TimeZone = 'Pacific/Honolulu';
 
     % add in planned recovery date
     tm.plannedRecov(g) = datetime(plannedRecov(g), 'Format', 'uuuu-MMM-dd HH:mm ZZZZ', ...
