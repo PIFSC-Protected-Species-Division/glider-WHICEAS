@@ -64,7 +64,8 @@ ppStruct.sg679 = workflow_downloadScript_sg679_20260205_WHICEAS(configFiles{4}, 
 targetsMidpointsFiles = { ...
     % 'targets_WHICEAS_SG274_1200km_WN_20260209_withMidpoints';
     % 'targets_WHICEAS_SG274_1050km_WN_20260225_withMidpoints';
-    'targets_WHICEAS_SG274_1050km_WN_20260406_withMidpoints_recoveryMod';
+    % 'targets_WHICEAS_SG274_1050km_WN_20260406_withMidpoints_recoveryMod';
+    'targets_WHICEAS_SG274_1050km_WN_20260408_withMidpoints_recoveryMod';
     % 'targets_WHICEAS_SG607_950km_LN_20260209_withMidpoints';
     % 'targets_WHICEAS_SG607_1050km_LN_20260224_withMidpoints';
     'targets_WHICEAS_SG607_1050km_LN_20260401_withMidpoints';
@@ -108,7 +109,8 @@ exportgraphics(gca, fullfile(path_repo, 'outputs', ...
     'recovery_planner.png'), 'Resolution', 600);
 
 % add some detail to individual maps
-for g = 1:numel(gliders)
+% for g = 1:numel(gliders)
+for g = [1, 3, 4] % skip SG607 now
     figNum = str2double(gliders{g}(3:end));
     figure(figNum);
     subtitle(sprintf('%.0f km completed. %.0f km to go.', ...
