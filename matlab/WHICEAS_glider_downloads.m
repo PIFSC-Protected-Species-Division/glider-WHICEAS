@@ -65,7 +65,8 @@ targetsMidpointsFiles = { ...
     % 'targets_WHICEAS_SG274_1200km_WN_20260209_withMidpoints';
     % 'targets_WHICEAS_SG274_1050km_WN_20260225_withMidpoints';
     % 'targets_WHICEAS_SG274_1050km_WN_20260406_withMidpoints_recoveryMod';
-    'targets_WHICEAS_SG274_1050km_WN_20260408_withMidpoints_recoveryMod';
+    % 'targets_WHICEAS_SG274_1050km_WN_20260408_withMidpoints_recoveryMod';
+        'targets_WHICEAS_SG274_1050km_WN_20260409_withMidpoints_recoveryMod';
     % 'targets_WHICEAS_SG607_950km_LN_20260209_withMidpoints';
     % 'targets_WHICEAS_SG607_1050km_LN_20260224_withMidpoints';
     'targets_WHICEAS_SG607_1050km_LN_20260401_withMidpoints';
@@ -87,7 +88,7 @@ diveLimits = [92; 66; 1; 1];
 
 % planned recovery dates
 plannedRecov = datetime({ ...
-    '2026-04-10 9:00';
+    '2026-04-20 9:00';
     '2026-04-06 9:00';
     '2026-04-14 9:00';
     '2026-04-14 9:00'
@@ -131,7 +132,8 @@ col_tgt = [0 0 0]; % black
 % define targets - simple for mapping
 targetsFiles = {
     % 'targets_WHICEAS_SG274_1200km_WN_20260209';
-    'targets_WHICEAS_SG274_1050km_WN_20260225';
+    % 'targets_WHICEAS_SG274_1050km_WN_20260225';
+        'targets_WHICEAS_SG274_1050km_WN_20260409_recoveryMod';
     % 'targets_WHICEAS_SG607_950km_LN_20260209';
     % 'targets_WHICEAS_SG607_1050km_LN_20260224';
     'targets_WHICEAS_SG607_1050km_LN_20260401';
