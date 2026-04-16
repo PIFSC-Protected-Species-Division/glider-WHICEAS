@@ -55,8 +55,12 @@ ppStruct.sg274 = workflow_downloadScript_sg274_20260128_WHICEAS(configFiles{1}, 
 % ppStruct.sg607 = workflow_downloadScript_sg607_20260128_WHICEAS(configFiles{2}, 0); % don't preload because of comms issues
 ppStruct.sg607 = load(fullfile(missionPaths{2}, 'flightStatus\diveTracking_sg607.mat'));
 ppStruct.sg607 = ppStruct.sg607.pp;
-ppStruct.sg639 = workflow_downloadScript_sg639_20260211_WHICEAS(configFiles{3}, 1);
-ppStruct.sg679 = workflow_downloadScript_sg679_20260205_WHICEAS(configFiles{4}, 1);
+% ppStruct.sg639 = workflow_downloadScript_sg639_20260211_WHICEAS(configFiles{3}, 1);
+ppStruct.sg639 = load(fullfile(missionPaths{3}, 'flightStatus\diveTracking_sg639.mat'));
+ppStruct.sg639 = ppStruct.sg639.pp;
+% ppStruct.sg679 = workflow_downloadScript_sg679_20260205_WHICEAS(configFiles{4}, 1);
+ppStruct.sg679 = load(fullfile(missionPaths{4}, 'flightStatus\diveTracking_sg679.mat'));
+ppStruct.sg679 = ppStruct.sg679.pp;
 
 %% create a travel metrics/status table and plot
 
