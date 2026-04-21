@@ -116,7 +116,7 @@ exportgraphics(gcf, fullfile(path_repo, 'outputs', ...
 
 % add some detail to individual maps
 % for g = 1:numel(gliders)
-for g = [1, 3, 4] % skip SG607 now
+for g = 1 % skip SG607, SG639, SG679 now
     figNum = str2double(gliders{g}(3:end));
     figure(figNum);
     subtitle(sprintf('%.0f km completed. %.0f km to go.', ...
