@@ -152,5 +152,5 @@ addScaleBar('Length', 200, 'Major', 100, 'Minor', 20, ...
 
 
 exportgraphics(gcf, fullfile(path_repo, 'outputs', 'allGliders_withShip_white.png'), ...
-    'Resolution', 300);
+    'Resolution', 600);
 
