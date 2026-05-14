@@ -14,29 +14,35 @@
 %	Authors:
 %		S. Fregosi <selene.fregosi@gmail.com> <https://github.com/sfregosi>
 %
-%	Updated:       6 May 2026
+%	Updated:       7 May 2026
 %
 %	Created with MATLAB ver.: 24.2.0.2740171 (R2024b) Update 1
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-addpath(genpath('T:\fregosi\github\agate'))
-% addpath(genpath('C:\Users\selene.fregosi\Documents\MATLAB\wispr3'))
-path_repo = 'T:\fregosi\github\glider-CalCurCEAS';
+addpath(genpath('C:\Users\pam_user\Documents\MATLAB\agate'))
+path_repo = 'C:\Users\pam_user\Documents\GitHub\glider-WHICEAS';
 
-missionStrs = {'sg639_CalCurCEAS_Sep2024';
-	'sg679_CalCurCEAS_Aug2024';
-    'sg680_CalCurCEAS_Sep2024'};
+missionStrs = {
+    'sg274_20260128_WHICEAS';
+    'sg607_20260128_WHICEAS';
+    'sg639_20260211_WHICEAS'};
 
-mtpNum = 3; % mission to process - UPDATE THIS TO RUN THROUGH EACH GLIDER
+mtp = 1; % mission to process - UPDATE THIS TO RUN THROUGH EACH GLIDER
+sdCard = 1; % two SD cards for each glider, run individually
 
-% initialize agate
-% make sure configuration file now has updated WISPR Settings section
-% (not required during mission so may not be set yet)
-CONFIG = agate(fullfile(path_repo, 'MATLAB', 'fregosi_config_files', ...
-   'server', ['agate_config_server_' missionStrs{mtpNum} '.cnf']));
+% % initialize agate
+% % make sure configuration file now has updated WISPR Settings section
+% % (not required during mission so may not be set yet)
+% CONFIG = agate(fullfile(path_repo, 'MATLAB', 'agate_configs_fregosi_pam-ww', ...
+%    ['agate_config_' missionStrs{mtp} '_pam-ww.cnf']));
 
+% set up input/output directories
+inDir = fullfile('P:\', 'glider', missionStrs{mtp}, 'recordings', ...
+    'raw_acoustic_data', ['SD' num2str(sdCard)]);
+outDir = fullfile('P:\', 'glider', missionStrs{mtp}, 'recordings', 'flac');
 
 % convert!
-convertWispr(CONFIG, 'showProgress', true, 'outExt', '.flac');
+% will show progress and write to flac as default
+convertWispr('inDir', inDir, 'outDir', outDir);
 % convertWispr(CONFIG, 'showProgress', true, 'outExt', '.flac', ...
 %     'restartDir', '240901');
