@@ -27,14 +27,8 @@ missionStrs = {
     'sg607_20260128_WHICEAS';
     'sg639_20260211_WHICEAS'};
 
-mtp = 1; % mission to process - UPDATE THIS TO RUN THROUGH EACH GLIDER
+mtp = 3; % mission to process - UPDATE THIS TO RUN THROUGH EACH GLIDER
 sdCard = 1; % two SD cards for each glider, run individually
-
-% % initialize agate
-% % make sure configuration file now has updated WISPR Settings section
-% % (not required during mission so may not be set yet)
-% CONFIG = agate(fullfile(path_repo, 'MATLAB', 'agate_configs_fregosi_pam-ww', ...
-%    ['agate_config_' missionStrs{mtp} '_pam-ww.cnf']));
 
 % set up input/output directories
 inDir = fullfile('P:\', 'glider', missionStrs{mtp}, 'recordings', ...
@@ -44,5 +38,9 @@ outDir = fullfile('P:\', 'glider', missionStrs{mtp}, 'recordings', 'flac');
 % convert!
 % will show progress and write to flac as default
 convertWispr('inDir', inDir, 'outDir', outDir);
+
+% below is old approach to restarting. This DOES NOT work on GCPs because
+% logs do not save as they go. Will need to resolve log writting issue
+% before this could be used
 % convertWispr(CONFIG, 'showProgress', true, 'outExt', '.flac', ...
 %     'restartDir', '240901');
