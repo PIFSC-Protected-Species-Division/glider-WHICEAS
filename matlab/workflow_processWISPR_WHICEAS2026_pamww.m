@@ -28,7 +28,7 @@ missionStrs = {
     'sg639_20260211_WHICEAS'};
 
 mtp = 3; % mission to process - UPDATE THIS TO RUN THROUGH EACH GLIDER
-sdCard = 1; % two SD cards for each glider, run individually
+sdCard = 2; % two SD cards for each glider, run individually
 
 % set up input/output directories
 inDir = fullfile('P:\', 'glider', missionStrs{mtp}, 'recordings', ...
