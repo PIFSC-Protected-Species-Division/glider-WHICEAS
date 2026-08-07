@@ -32,8 +32,8 @@ gliderStrs = {
     'sg607';
     'sg639'};
 
-mtp = 2; % mission to process - UPDATE THIS TO RUN THROUGH EACH GLIDER
-sdCard = 1; % two SD cards for each glider, run individually
+mtp = 3; % mission to process - UPDATE THIS TO RUN THROUGH EACH GLIDER
+sdCard = 2; % two SD cards for each glider, run individually
 
 % % initialize agate
 % % make sure configuration file now has updated WISPR Settings section
@@ -44,10 +44,11 @@ sdCard = 1; % two SD cards for each glider, run individually
 % set up input/output directories
 inDir = fullfile('Z:\', 'glider_WHICEAS_2026', 'raw_data_on_GCP', ...
     [gliderStrs{mtp} '_raw_acoustic_data'], ['SD' num2str(sdCard)]);
-outDir = fullfile('Z:\', 'glider_WHICEAS_2026', missionStrs{mtp}, 'recordings', 'flac');
+outDir = fullfile('Z:\', 'glider_WHICEAS_2026', missionStrs{mtp}, ...
+    'recordings', 'flac');
 
 % convert!
 % will show progress and write to flac as default
-% convertWispr('inDir', inDir, 'outDir', outDir);
-convertWispr('inDir', inDir, 'outDir', outDir, ...
-    'restartDir', '260201');
+convertWispr('inDir', inDir, 'outDir', outDir);
+% convertWispr('inDir', inDir, 'outDir', outDir, ...
+%     'restartDir', '260201');
