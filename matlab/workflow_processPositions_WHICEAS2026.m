@@ -65,28 +65,29 @@ end
 % 0 in plotOn argument will not plot 'check' figures, but change to 1 to
 % plot basic figures for output checking
 
-% note SG639 Dives 73-76 have incomplete/bad .nc files (due to compass
-% calibration errors) so those dives have some NA values in the GPS surface
-% table where correct depth and current data could not be calculated and
-% those dives are missing from the calculated location table
+% % note SG639 Dives 73-76 have incomplete/bad .nc files (due to compass
+% % calibration errors) so those dives have some NA values in the GPS surface
+% % table where correct depth and current data could not be calculated and
+% % those dives are missing from the calculated location table
+% 
+% % manually fix the bad inshore fix for SG679 on Dives 122/123
+% if strcmp(mtp, 'sg679_CalCurCEAS_Aug2024')
+% 
+%     % remove end lat/lon of D122, start lat/lon D123
+%     gpsSurfT.endLatitude(122) = NaN;
+%     gpsSurfT.endLongitude(122) = NaN;
+%     gpsSurfT.startLatitude(123) = NaN;
+%     gpsSurfT.startLongitude(123) = NaN;
+% 
+%     % remove all calculated locs for D123
+%     badIdx = find(locCalcT.dive == 123);
+%     locCalcT.latitude(badIdx) = NaN;
+%     locCalcT.longitude(badIdx) = NaN;
+%     locCalcT.latitude_gsm(badIdx) = NaN;
+%     locCalcT.longitude_gsm(badIdx) = NaN;
+% 
+% end
 
-% manually fix the bad inshore fix for SG679 on Dives 122/123
-if strcmp(mtp, 'sg679_CalCurCEAS_Aug2024')
-
-    % remove end lat/lon of D122, start lat/lon D123
-    gpsSurfT.endLatitude(122) = NaN;
-    gpsSurfT.endLongitude(122) = NaN;
-    gpsSurfT.startLatitude(123) = NaN;
-    gpsSurfT.startLongitude(123) = NaN;
-
-    % remove all calculated locs for D123
-    badIdx = find(locCalcT.dive == 123);
-    locCalcT.latitude(badIdx) = NaN;
-    locCalcT.longitude(badIdx) = NaN;
-    locCalcT.latitude_gsm(badIdx) = NaN;
-    locCalcT.longitude_gsm(badIdx) = NaN;
-
-end
 % save as .mat and .csv
 save(fullfile(CONFIG.path.mission, 'profiles', ...
     [CONFIG.gmStr, '_gpsSurfaceTable.mat']), 'gpsSurfT');
