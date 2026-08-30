@@ -25,7 +25,7 @@ missionStrs = {
     'sg607_20260128_WHICEAS';
     'sg639_20260211_WHICEAS'};
 
-mtp = 1; % mission to process - UPDATE THIS TO RUN THROUGH EACH GLIDER
+mtp = 3; % mission to process - UPDATE THIS TO RUN THROUGH EACH GLIDER
 
 % set original and desired sample rates (numeric and as string)
 fs0 = 200000; % original sample rate
