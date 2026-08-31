@@ -7,7 +7,8 @@ CONFIG.sgVer = 67.01; % 66.12, 66.14, 67.00 or 67.01, firmware version displayed
 CONFIG.tmd = 82; % target mission duration in days
 
 % define paths
-CONFIG.path.mission = 'P:\glider\sg274_20260128_WHICEAS\piloting';
+% CONFIG.path.mission = 'P:\glider\sg274_20260128_WHICEAS\piloting';
+CONFIG.path.mission = 'C:\Users\pam_user\desktop\sg274_20260128_WHICEAS\piloting';
 
 % %%%% OPTIONAL - basestation %%%%%%%%%%%%%%%
 % specify basestation configuration file
