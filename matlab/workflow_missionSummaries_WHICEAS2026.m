@@ -20,7 +20,7 @@
 %	Authors:
 %		S. Fregosi <selene.fregosi@gmail.com> <https://github.com/sfregosi>
 %
-%	Updated:   2026 May 11
+%	Updated:   2026 August 30
 %
 %	Created with MATLAB ver.: 25.1.0.2973910 (R2025a) Update 1
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -54,7 +54,7 @@ for m = 1:length(missionStrs)
     yrStr = missionStr(end-3:end);
 
     % define path to 'profiles' folder with processed tables
-    path_profiles = fullfile('P:\glider\', missionStr, 'profiles');
+    path_profiles = fullfile('P:\glider\', missionStr, 'piloting', 'profiles');
 
     % load locCalcT and gpsSurfaceTable
     % these were created with agate, using workflow_processPositionalData e.g.,
