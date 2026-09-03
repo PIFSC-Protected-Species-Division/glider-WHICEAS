@@ -142,6 +142,10 @@ exportgraphics(gcf, fullfile(CONFIG.path.mission, 'profiles', ...
 
 %% (4) Extract acoustic system status for each dive and sample time
 
+% **THIS IS IA SLOW STEP**
+% May be faster if you choose decimated sound files, although it only reads
+% using audioinfo so not sure if it's much faster
+
 if ~exist('locCalcT', 'var')
     load(fullfile(CONFIG.path.mission, 'profiles', ...
         [CONFIG.gmStr, '_locCalcT.mat']))
@@ -187,7 +191,7 @@ if ~exist('pamFiles', 'var')
         [CONFIG.gmStr, '_pamFiles.mat']))
 end
 
-timeBuffer = 80; % seconds
+timeBuffer = 140; % seconds - 140 for 120 sec files, 80 for 60 sec files
 pamFilePosits = extractPAMFilePosits(pamFiles, locCalcT, timeBuffer);
 
 % save it

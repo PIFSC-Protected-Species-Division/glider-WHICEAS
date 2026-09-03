@@ -48,3 +48,16 @@ CONFIG.plots.figNumList = CONFIG.plots.figSeed + [0 1 2 3 4 5 6 7 8 9];
 % load plot positions 
 % load('C:\Users\User.Name\Documents\gliders\figPositions.mat');
 % CONFIG.plots.positions = positions;
+
+% %%%% OPTIONAL - acoustics %%%%%%%%%%%%%%%%%
+
+% WISPR settings
+% only needed after mission is complete (no piloting functionality for WISPR)
+CONFIG.ws.loggers = 1; % 1 for active, 0 for inactive
+%CONFIG.ws.inDir = 'D:\sgXXX_Location_Mon20XX_raw_acoustic_data';   % path to raw .dat files
+%CONFIG.ws.outDir = 'E:\sgXXX_Location_Mon20XX\flac';   % path to save converted files
+CONFIG.ws.outExt = '.flac';   % determines output format
+CONFIG.ws.fileLength = 120; % in seconds
+CONFIG.ws.dateFormat = 'yyMMdd_HHmmss'; % format of timestamp in filename
+CONFIG.ws.dateStart = 7; % character of filename where date starts
+%% example file name: WISPR_230504_202206.flac
